@@ -7,9 +7,10 @@
 body {
   /* font-family: 'Biryani', sans-serif; */
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
+  grid-template-columns: 2fr 2fr;
+  /* grid-gap: 10px; */
   grid-template-areas:
+  "header header"
   "header header"
   "left right";
 }
@@ -17,7 +18,6 @@ body {
 /* HEADER STYLING */
 header {
   background-color: #404042;
-  display: flex;
   grid-area: header;
   justify-content: center;
 }
