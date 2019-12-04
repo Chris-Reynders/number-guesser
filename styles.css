@@ -27,10 +27,12 @@ h2 {
   color: #EEEEEE;
 }
 
+/* MAIN STYLING */
 main {
 
 }
 
+/* LEFT SIDE STYLING  */
 #main-content-left {
   background-color: #F5F6F8;
 
@@ -53,4 +55,85 @@ h3 {
 .x-input-title {
   color: #838289;
   border: 2px solid #EFEFEF;
+}
+
+.x-interface-input {
+  /* color: #; */
+}
+
+#y-minrange-inputbox {
+
+}
+
+#y-maximumrange-inputbox{
+
+}
+
+.x-gray-button {
+
+}
+
+#y-update-button {
+
+}
+
+h4 {
+
+}
+
+#y-first-challenger {
+
+}
+
+#y-first-challenger-name {
+
+}
+
+#y-first-challenger-guess {
+
+}
+
+#y-second-challenger {
+
+}
+
+#y-second-challenger-name {
+
+}
+
+#y-second-challenger-guess {
+
+}
+
+#y-submit-guess-button {
+
+}
+
+#y-reset-game-button {
+
+}
+
+#y-clear-form-button {
+
+}
+
+.x-results-section {
+
+}
+
+p {
+
+}
+
+#y-challenger-1-current-guess {
+
+}
+
+#y-challenger-2-current-guess {
+
+}
+
+/* RIGHT SIDE STYLING */
+#main-content-right {
+
 }
