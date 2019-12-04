@@ -6,12 +6,19 @@
 
 body {
   /* font-family: 'Biryani', sans-serif; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  grid-template-areas:
+  "header header"
+  "left right";
 }
 
 /* HEADER STYLING */
 header {
   background-color: #404042;
   display: flex;
+  grid-area: header;
   justify-content: center;
 }
 
@@ -41,10 +48,14 @@ main {
 .x-interface-boxes {
   background-color: #FFFFFF;
   border: 2px solid #EFEFEF;
+
 }
 
 h3 {
   color: #404042;
+}
+
+.x-label-input-button {
 
 }
 
