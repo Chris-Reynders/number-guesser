@@ -8,7 +8,6 @@ body {
   /* font-family: 'Biryani', sans-serif; */
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
   grid-template-areas:
   "header header"
   "left right";
@@ -41,31 +40,36 @@ main {
 
 /* LEFT SIDE STYLING  */
 #main-content-left {
-  background-color: #F5F6F8;
+  background-color: #f7f7f7;
+  height: 100vh;
+  padding: 3%;
 
 }
 
 .x-interface-boxes {
   background-color: #FFFFFF;
   border: 2px solid #EFEFEF;
-
+  padding: 2%;
 }
 
 h3 {
   color: #404042;
 }
 
-.x-label-input-button {
+#y-setrange-box-parent {
+  display: flex;
 
 }
 
 .x-box-grouper {
+  display: flex;
+  flex-direction: column;
 
 }
 
 .x-input-title {
   color: #838289;
-  border: 2px solid #EFEFEF;
+  /* border: 2px solid #EFEFEF; */
 }
 
 .x-interface-input {
