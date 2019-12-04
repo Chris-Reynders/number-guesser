@@ -17,9 +17,10 @@ body {
 
 /* HEADER STYLING */
 header {
+  text-align: center;
   background-color: #404042;
   grid-area: header;
-  justify-content: center;
+
 }
 
 h1 {
