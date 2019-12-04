@@ -5,20 +5,21 @@
 }
 
 body {
-  /* font-family: 'Biryani', sans-serif; */
+  /* font-family: ; */
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 2fr;
   grid-template-areas:
+  "header header"
   "header header"
   "left right";
 }
 
 /* HEADER STYLING */
 header {
+  text-align: center;
   background-color: #404042;
-  display: flex;
   grid-area: header;
-  justify-content: center;
+
 }
 
 h1 {
