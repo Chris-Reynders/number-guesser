@@ -41,6 +41,9 @@ main {
 /* LEFT SIDE STYLING  */
 #main-content-left {
   background-color: #f7f7f7;
+  grid-area: left;
+  grid-column: 1fr 1fr;
+
   height: 100vh;
   padding: 3%;
 
@@ -64,16 +67,17 @@ h3 {
 .x-box-grouper {
   display: flex;
   flex-direction: column;
+  margin-right: 3%;
 
 }
 
 .x-input-title {
   color: #838289;
-  /* border: 2px solid #EFEFEF; */
 }
 
 .x-interface-input {
   /* color: #; */
+  /* height: 44px; */
 }
 
 #y-minrange-inputbox {
@@ -150,5 +154,8 @@ p {
 
 /* RIGHT SIDE STYLING */
 #main-content-right {
-
+  background-color: #d0d2d3;
+  height: 100vh;
+  grid-area: right;
+  grid-column: 1fr 1fr;
 }
