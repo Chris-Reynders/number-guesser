@@ -5,10 +5,9 @@
 }
 
 body {
-  /* font-family: 'Biryani', sans-serif; */
+  /* font-family: ; */
   display: grid;
   grid-template-columns: 2fr 2fr;
-  /* grid-gap: 10px; */
   grid-template-areas:
   "header header"
   "header header"
