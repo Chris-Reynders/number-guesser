@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* font-family: 'Biryani', sans-serif; */
+}
+
+/* HEADER STYLING */
+header {
+  background-color: #404042;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  color: #EE448B;
+}
+
+#heading-bold {
+  /* font-weight: ; */
+}
+
+h2 {
+  color: #EEEEEE;
+}
+
+main {
+
+}
+
+#main-content-left {
+  background-color: #F5F6F8;
+
+}
+
+.x-interface-boxes {
+  background-color: #FFFFFF;
+  border: 2px solid #EFEFEF;
+}
+
+h3 {
+  color: #404042;
+
+}
+
+.x-box-grouper {
+
+}
+
+.x-input-title {
+  color: #838289;
+  border: 2px solid #EFEFEF;
+}
