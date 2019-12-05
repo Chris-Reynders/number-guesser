@@ -36,7 +36,7 @@ h1 {
 hr {
   border: none;
   border-top: 2px solid #DEDEDE;
-  padding-top: 15px;
+  padding-top: 0px;
   padding-bottom: 2%;
   margin-left: 28%;
   margin-top: .5%;
@@ -46,12 +46,11 @@ hr {
 /* NOTE - this is showing up correctly in FF but not in Chrome :) */
 hr:after {
   background: #404042;
-  color: #DEDEDE;
+  color: pink;
   content: 'Ultimate Challenger Edition';
-  left: 21em;
   padding: 0 1%;
-  position: absolute;
-  top: 4.18em;
+  position: inherit;
+  top: .18em;
   font-size: 25px;
 }
 
