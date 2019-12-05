@@ -6,12 +6,6 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-  grid-template-areas:
-  "header header"
-  "header header"
-  "left right";
 }
 
 /* HEADER STYLING */
@@ -60,21 +54,25 @@ h2 {
   color: #DEDEDE;
   font-weight: 100;
   font-size: 32px;
-  padding-bottom: 3%;
+  padding-bottom: 2%;
   margin-top: -2%;
 }
 
 /* MAIN STYLING */
 main {
  color: #404042;
+ display: grid;
+ grid-template-columns: 2fr 2fr;
+ grid-template-areas:
+ "left right";
 }
 
 /* LEFT SIDE STYLING  */
 #main-content-left {
   background-color: #f7f7f7;
+  border-right: 3px solid #B4B4B4;
   grid-area: left;
   grid-column: 1fr 1fr;
-
   height: 100vh;
   padding: 3%;
 
