@@ -5,7 +5,7 @@
 }
 
 body {
-  /* font-family: ; */
+  font-family: 'Open Sans', sans-serif;
   display: grid;
   grid-template-columns: 2fr 2fr;
   grid-template-areas:
@@ -19,24 +19,48 @@ header {
   text-align: center;
   background-color: #404042;
   grid-area: header;
-
+  text-transform: uppercase;
 }
 
 h1 {
   color: #EE448B;
+  font-weight: 100;
+  font-size: 90px;
 }
 
-#heading-bold {
-  /* font-weight: ; */
+#y-bold-heading {
+  font-weight: 700;
 }
+
+hr {
+  border: none;
+  border-top: 2px solid #DEDEDE;
+  padding-top: 15px;
+}
+
+/* NOTE - this is showing up correctly in FF but not in Chrome :) */
+hr:after {
+  background: #404042;
+  color: #DEDEDE;
+  content: 'Ultimate Challenger Edition';
+  padding: 0 4px;
+  position: relative;
+  top: -1.3em;
+  font-size: 30px;
+}
+
 
 h2 {
-  color: #EEEEEE;
+  color: #DEDEDE;
+  font-weight: 100;
+  font-size: 32px;
+  padding-bottom: 3%;
+  margin-top: -2%;
 }
 
 /* MAIN STYLING */
 main {
-
+ color: #404042;
 }
 
 /* LEFT SIDE STYLING  */
