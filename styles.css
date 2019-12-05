@@ -19,24 +19,33 @@ header {
   text-align: center;
   background-color: #404042;
   grid-area: header;
+  text-transform: uppercase;
+
 
 }
 
 h1 {
   color: #EE448B;
+  font-weight: 300;
+  font-size: 90px;
+
+
 }
 
-#heading-bold {
-  /* font-weight: ; */
+#y-bold-heading {
+  font-weight: 700;
+
 }
 
 h2 {
-  color: #EEEEEE;
+  color: #DEDEDE;
+  font-weight: 100;
+  font-size: 32px;
 }
 
 /* MAIN STYLING */
 main {
-
+ color: #404042;
 }
 
 /* LEFT SIDE STYLING  */
