@@ -126,8 +126,14 @@ h3 {
 }
 
 h4 {
-
+  font-weight: 300;
 }
+
+.x-current-range-number {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
 
 #y-first-challenger {
 
