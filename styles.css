@@ -11,7 +11,7 @@ body {
 /* HEADER STYLING */
 header {
   text-align: center;
-  background-color: #404042;
+  background-color: #404041;
   grid-area: header;
   text-transform: uppercase;
 }
@@ -70,21 +70,37 @@ main {
 #main-content-left {
   background-color: #f7f7f7;
   border-right: 3px solid #B4B4B4;
+  display: grid;
   grid-area: left;
-  grid-column: 1fr 1fr;
-  height: 100vh;
-  padding: 3%;
+  /* grid-template-columns: 1fr 3fr 2fr;
+  grid-template-areas:
+  "top middle bottom"; */
+  padding: 3% 3% 0;
 
 }
 
 .x-interface-boxes {
   background-color: #FFFFFF;
   border: 2px solid #EFEFEF;
+  margin-bottom: 3%;
   padding: 2%;
 }
 
+/* #y-current-range-container {
+  grid-area: top;
+}
+
+#y-challenger-container {
+  grid-area: middle;
+}
+
+#y-results-container {
+  grid-area: bottom;
+} */
+
 h3 {
   color: #404042;
+  font-size: 24px;
 }
 
 #y-setrange-box-parent {
@@ -92,15 +108,25 @@ h3 {
 
 }
 
-.x-box-grouper {
-  display: flex;
-  flex-direction: column;
+.x-setrange-box-grouper {
   margin-right: 3%;
+}
 
+.x-challenger-box-parent {
+  display: flex;
+  justify-content: space-between;
+  margin: 1% 0;
+}
+
+.x-challenger-box-grouper {
+  display: inline-flex;
+  flex-direction: column;
+  margin: 1% 0 -6% 0;
 }
 
 .x-input-title {
   color: #838289;
+  font-size: 20px;
 }
 
 .x-interface-input {
@@ -109,35 +135,69 @@ h3 {
 }
 
 #y-minrange-inputbox {
-
+  font-size: 20px;
+  padding: 5% 2%;
+  width: 88%;
 }
 
 #y-maximumrange-inputbox{
-
+  font-size: 20px;
+  padding: 5% 2%;
+  width: 88%;
 }
 
 .x-gray-button {
+  background-color: #d0d2d3;
+  border: none;
+  border-radius: 50px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 4% 1%;
+  padding: 1.5% 4%;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+}
 
+.x-gray-button:hover {
+    background: #EE448B;
+}
+
+.x-gray-button:focus {
+  background: #EE448B;
+  outline: 0;
 }
 
 #y-update-button {
-
+  /* margin-right: 2%; */
 }
 
 h4 {
-
+  font-weight: 300;
+  font-size: 20px;
 }
+
+.x-current-range-number {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
 
 #y-first-challenger {
 
 }
 
 #y-first-challenger-name {
-
+  font-size: 20px;
+  padding: 5% 2%;
+  width: 182%;
 }
 
 #y-first-challenger-guess {
-
+  font-size: 20px;
+  padding: 5% 2%;
+  width: 95%;
 }
 
 #y-second-challenger {
@@ -145,11 +205,25 @@ h4 {
 }
 
 #y-second-challenger-name {
-
+  font-size: 20px;
+  padding: 5% 2%;
+  width: 182%;
 }
 
 #y-second-challenger-guess {
+  font-size: 20px;
+  padding: 5% 2%;
+  width: 95%;
+}
 
+.challenge-container {
+
+}
+
+#y-label-input-button {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 9%;
 }
 
 #y-submit-guess-button {
@@ -161,6 +235,7 @@ h4 {
 }
 
 #y-clear-form-button {
+
 
 }
 
@@ -183,7 +258,5 @@ p {
 /* RIGHT SIDE STYLING */
 #main-content-right {
   background-color: #d0d2d3;
-  height: 100vh;
   grid-area: right;
-  grid-column: 1fr 1fr;
 }

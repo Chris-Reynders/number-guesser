@@ -21,83 +21,91 @@
   </header>
 <main>
   <section id="main-content-left">
-    <section class="x-interface-boxes">
-      <h3>Set Range</h3>
-        <div id="y-setrange-box-parent">
-          <div class="x-box-grouper">
-            <label class="x-input-title">
-              Min Range
-            </label>
-              <input type="text" class="x-interface-input" id="y-minrange-inputbox" />
-          </div>
-          <div class="x-box-grouper">
-            <label class="x-input-title">
-              Max Range
-            </label>
-              <input type="text" class="x-interface-input" id="y-maximumrange-inputbox" />
-          </div>
-          <button class="x-gray-button" id="y-update-button">UPDATE
-          </button>
+  <section class="x-interface-boxes" id="y-current-range-container">
+    <h3>Set Range</h3>
+      <div id="y-setrange-box-parent">
+        <div class="x-setrange-box-grouper">
+          <label class="x-input-title">
+            Min Range
+          </label>
+            <input type="text" class="x-interface-input" id="y-minrange-inputbox" />
         </div>
-      </section>
-      <section class="x-interface-boxes"
-        <h4>The Current Range is 1 to 100</h4>
-          <div class="x-label-input-button">
-            <h3>Challenger 1</h3>
-            <div class="x-box-grouper">
+        <div class="x-setrange-box-grouper">
+          <label class="x-input-title">
+            Max Range
+          </label>
+            <input type="text" class="x-interface-input" id="y-maximumrange-inputbox" />
+        </div>
+        <button class="x-gray-button" id="y-update-button">UPDATE
+        </button>
+      </div>
+    </section>
+    <section class="x-interface-boxes" id="y-challenger-container">
+      <h4>The Current Range is <span class="x-current-range-number">1</span> to <span class="x-current-range-number">100</span></h4>
+      <section class="x-label-input-button">
+        <div class="challenge-container">
+          <h3>Challenger 1</h3>
+          <div class="x-challenger-box-parent">
+            <div class="x-challenger-box-grouper">
               <label class="x-input-title" id="y-first-challenger">
                 Name
               </label>
               <input type="text" class="x-interface-input" id="y-first-challenger-name" />
             </div>
-            <div class="x-box-grouper">
+            <div class="x-challenger-box-grouper">
               <label class="x-input-title">
                 Guess
               </label>
               <input type="text" class="x-interface-input" id="y-first-challenger-guess" />
             </div>
-            <h3>Challenger 2</h3>
-            <div class="x-box-grouper">
+          </div>
+        </div>
+        <div class="challenge-container">
+          <h3>Challenger 2</h3>
+          <div class="x-challenger-box-parent">
+            <div class="x-challenger-box-grouper">
               <label class="x-input-title" id="y-second-challenger">
                 Name
               </label>
               <input type="text" class="x-interface-input" id="y-second-challenger-name" />
             </div>
-            <div class="x-box-grouper">
+            <div class="x-challenger-box-grouper">
               <label class="x-input-title">
                 Guess
               </label>
               <input type="text" class="x-interface-input" id="y-second-challenger-guess"  />
             </div>
           </div>
-          <div class="x-label-input-button">
-            <button class="x-gray-button" id="y-submit-guess-button">SUBMIT GUESS
-            </button>
-            <button class="x-gray-button" id="y-reset-game-button">RESET GAME
-            </button>
-            <button class="x-gray-button" id="y-clear-form-button">CLEAR FORM
-            </button>
+        </div>
+      </section>
+      <section class="x-label-input-button" id="y-label-input-button">
+        <button class="x-gray-button" id="y-submit-guess-button">SUBMIT GUESS
+        </button>
+        <button class="x-gray-button" id="y-reset-game-button">RESET GAME
+        </button>
+        <button class="x-gray-button" id="y-clear-form-button">CLEAR FORM
+        </button>
+      </section>
+    </section>
+    <section class="x-interface-boxes" id="y-results-container">
+      <h3>Latest Guess</h3>
+      <div class="x-label-input-button">
+        <div class="x-results-section">
+          <p>Challenger 1 Name</p>
+          <p>current guess</p>
+          <div id="y-challenger-1-current-guess">
           </div>
-        </section>
-        <section class="x-interface-boxes">
-          <h3>Latest Guess</h3>
-          <div class="x-label-input-button">
-            <div class="x-results-section">
-              <p>Challenger 1 Name</p>
-              <p>current guess</p>
-              <div id="y-challenger-1-current-guess">
-              </div>
-              <p>no guesses yet!</p>
-            </div>
-            <div class="x-results-section">
-              <p>Challenger 2 Name</p>
-              <p>current guess</p>
-              <div id="y-challenger-2-current-guess">
-              </div>
-              <p>no guesses yet!</p>
-            </div>
+          <p>no guesses yet!</p>
+        </div>
+        <div class="x-results-section">
+          <p>Challenger 2 Name</p>
+          <p>current guess</p>
+          <div id="y-challenger-2-current-guess">
           </div>
-        </section>
+          <p>no guesses yet!</p>
+        </div>
+      </div>
+    </section>
   </section>
   <section id="main-content-right">
   </section>
