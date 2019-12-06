@@ -86,6 +86,7 @@ main {
 
 h3 {
   color: #404042;
+  font-size: 24px;
 }
 
 #y-setrange-box-parent {
@@ -94,14 +95,13 @@ h3 {
 }
 
 .x-box-grouper {
-  display: flex;
-  flex-direction: column;
   margin-right: 3%;
 
 }
 
 .x-input-title {
   color: #838289;
+  font-size: 20px;
 }
 
 .x-interface-input {
@@ -127,6 +127,7 @@ h3 {
 
 h4 {
   font-weight: 300;
+  font-size: 20px;
 }
 
 .x-current-range-number {
