@@ -94,9 +94,18 @@ h3 {
 
 }
 
-.x-box-grouper {
+.x-setrange-box-grouper {
   margin-right: 3%;
+}
 
+.x-challenger-box-grouper {
+  display: inline-flex;
+  flex-direction: column;
+  margin-right: 3%;
+}
+
+.x-challenger-box-grouper {
+  margin-right: 3%;
 }
 
 .x-input-title {
