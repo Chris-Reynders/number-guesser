@@ -217,10 +217,14 @@ h4 {
   width: 95%;
 }
 
+.challenge-container {
+  
+}
+
 #y-label-input-button {
   display: flex;
   justify-content: space-around;
-  margin-top: 12%;
+  margin-top: 9%;
 }
 
 #y-submit-guess-button {
