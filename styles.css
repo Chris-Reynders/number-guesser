@@ -11,7 +11,7 @@ body {
 /* HEADER STYLING */
 header {
   text-align: center;
-  background-color: #404042;
+  background-color: #404041;
   grid-area: header;
   text-transform: uppercase;
 }
@@ -84,7 +84,7 @@ main {
   background-color: #FFFFFF;
   border: 2px solid #EFEFEF;
   margin-bottom: 3%;
-  padding: 3%;
+  padding: 2%;
 }
 
 /* #y-current-range-container {
@@ -151,14 +151,21 @@ h3 {
   background-color: #d0d2d3;
   border: none;
   color: #FFFFFF;
+  cursor: pointer;
   font-size: 20px;
   font-weight: 700;
   padding: 4%;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+}
 
+.x-gray-button:hover,
+.x-gray-button:focus {
+    background: #EE448B;
 }
 
 #y-update-button {
-
+  /* margin-right: 2%; */
 }
 
 h4 {
@@ -219,6 +226,7 @@ h4 {
 }
 
 #y-clear-form-button {
+
 
 }
 
