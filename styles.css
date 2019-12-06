@@ -150,18 +150,24 @@ h3 {
 .x-gray-button {
   background-color: #d0d2d3;
   border: none;
+  border-radius: 50px;
   color: #FFFFFF;
   cursor: pointer;
   font-size: 20px;
   font-weight: 700;
-  padding: 4%;
+  margin: 4% 1%;
+  padding: 1.5% 4%;
   text-align: center;
   transition: background 250ms ease-in-out, transform 150ms ease;
 }
 
-.x-gray-button:hover,
-.x-gray-button:focus {
+.x-gray-button:hover {
     background: #EE448B;
+}
+
+.x-gray-button:focus {
+  background: #EE448B;
+  outline: 0;
 }
 
 #y-update-button {
