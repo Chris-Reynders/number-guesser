@@ -73,6 +73,9 @@ main {
   border-right: 3px solid #B4B4B4;
   display: grid;
   grid-area: left;
+  /* grid-template-columns: 1fr 3fr 2fr;
+  grid-template-areas:
+  "top middle bottom"; */
   height: 100vh;
   padding: 3%;
 
@@ -83,6 +86,18 @@ main {
   border: 2px solid #EFEFEF;
   padding: 2%;
 }
+
+/* #y-current-range-container {
+  grid-area: top;
+}
+
+#y-challenger-container {
+  grid-area: middle;
+}
+
+#y-results-container {
+  grid-area: bottom;
+} */
 
 h3 {
   color: #404042;
@@ -179,6 +194,12 @@ h4 {
   width: 95%;
 }
 
+#y-label-input-button {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 12%;
+}
+
 #y-submit-guess-button {
 
 }
@@ -212,5 +233,4 @@ p {
   background-color: #d0d2d3;
   height: 100vh;
   grid-area: right;
-  grid-column: 1fr 1fr;
 }

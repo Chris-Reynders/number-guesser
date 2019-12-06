@@ -17,7 +17,7 @@
   </header>
 <main>
   <section id="main-content-left">
-    <section class="x-interface-boxes">
+    <section class="x-interface-boxes" id="y-current-range-container">
       <h3>Set Range</h3>
         <div id="y-setrange-box-parent">
           <div class="x-setrange-box-grouper">
@@ -36,7 +36,7 @@
           </button>
         </div>
       </section>
-      <section class="x-interface-boxes">
+      <section class="x-interface-boxes" id="y-challenger-container">
         <h4>The Current Range is <span class="x-current-range-number">1</span> to <span class="x-current-range-number">100</span></h4>
           <div class="x-label-input-button">
             <h3>Challenger 1</h3>
@@ -70,16 +70,16 @@
               </div>
             </div>
           </div>
-          <div class="x-label-input-button">
+          <section class="x-label-input-button" id="y-label-input-button">
             <button class="x-gray-button" id="y-submit-guess-button">SUBMIT GUESS
             </button>
             <button class="x-gray-button" id="y-reset-game-button">RESET GAME
             </button>
             <button class="x-gray-button" id="y-clear-form-button">CLEAR FORM
             </button>
-          </div>
+          </section>
         </section>
-        <section class="x-interface-boxes">
+        <section class="x-interface-boxes" id="y-results-container">
           <h3>Latest Guess</h3>
           <div class="x-label-input-button">
             <div class="x-results-section">
