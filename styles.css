@@ -10,10 +10,28 @@ body {
 
 /* HEADER STYLING */
 header {
-  text-align: center;
+
+  /* text-align: center; */
+  /* background-color: #404041;
+  display: flex;
+  justify-content: center; */
+  /* width: 100%; */
+  /* grid-area: header; */
+  /* text-transform: uppercase; */
+
+}
+
+.header-pic {
+  /* background: url(./assets/number-guesser-title.png) 50% center no-repeat; */
   background-color: #404041;
-  grid-area: header;
-  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  background: no-repeat;
+}
+
+img {
+  width: 100%;
+
 }
 
 h1 {
