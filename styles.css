@@ -76,15 +76,15 @@ main {
   /* grid-template-columns: 1fr 3fr 2fr;
   grid-template-areas:
   "top middle bottom"; */
-  height: 100vh;
-  padding: 3%;
+  padding: 3% 3% 0;
 
 }
 
 .x-interface-boxes {
   background-color: #FFFFFF;
   border: 2px solid #EFEFEF;
-  padding: 2%;
+  margin-bottom: 3%;
+  padding: 3%;
 }
 
 /* #y-current-range-container {
@@ -136,14 +136,24 @@ h3 {
 }
 
 #y-minrange-inputbox {
-
+  font-size: 20px;
+  padding: 5% 2%;
+  width: 88%;
 }
 
 #y-maximumrange-inputbox{
-
+  font-size: 20px;
+  padding: 5% 2%;
+  width: 88%;
 }
 
 .x-gray-button {
+  background-color: #d0d2d3;
+  border: none;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 4%;
 
 }
 
@@ -231,6 +241,5 @@ p {
 /* RIGHT SIDE STYLING */
 #main-content-right {
   background-color: #d0d2d3;
-  height: 100vh;
   grid-area: right;
 }
