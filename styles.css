@@ -27,7 +27,7 @@ h1 {
   padding: 1% 0 .05%;
 }
 
-#y-bold-heading {
+#bold-heading {
   font-weight: 700;
 }
 
@@ -41,7 +41,6 @@ hr {
   width: 44.5%;
 }
 
-/* NOTE - this is showing up correctly in FF but not in Chrome :) */
 hr:after {
   background: #404042;
   color: pink;
@@ -51,7 +50,6 @@ hr:after {
   top: .18em;
   font-size: 25px;
 }
-
 
 h2 {
   color: #DEDEDE;
@@ -83,74 +81,60 @@ main {
 
 }
 
-.x-interface-boxes {
+.interface-boxes {
   background-color: #FFFFFF;
   border: 2px solid #EFEFEF;
   margin-bottom: 3%;
   padding: 2%;
 }
 
-/* #y-current-range-container {
-  grid-area: top;
-}
-
-#y-challenger-container {
-  grid-area: middle;
-}
-
-#y-results-container {
-  grid-area: bottom;
-} */
-
 h3 {
   color: #404042;
   font-size: 24px;
 }
 
-#y-setrange-box-parent {
+#setrange-box-parent {
   display: flex;
-
 }
 
-.x-setrange-box-grouper {
+.setrange-box-grouper {
   margin-right: 3%;
 }
 
-.x-challenger-box-parent {
+.challenger-box-parent {
   display: flex;
   justify-content: space-between;
   margin: 1% 0;
 }
 
-.x-challenger-box-grouper {
+.challenger-box-grouper {
   display: inline-flex;
   flex-direction: column;
   margin: 1% 0 -6% 0;
 }
 
-.x-input-title {
+.input-title {
   color: #838289;
   font-size: 20px;
 }
 
-.x-interface-input {
-  /* color: #; */
-  /* height: 44px; */
+.interface-input {
+
 }
 
-#y-minrange-inputbox {
+#minrange-inputbox {
   font-size: 20px;
   padding: 5% 2%;
   width: 88%;
 }
 
-#y-maximumrange-inputbox{
+#maximumrange-inputbox{
   font-size: 20px;
   padding: 5% 2%;
   width: 88%;
 }
 
-.x-gray-button {
+.gray-button {
   background-color: #d0d2d3;
   border: none;
   border-radius: 50px;
@@ -164,86 +148,82 @@ h3 {
   transition: background 250ms ease-in-out, transform 150ms ease;
 }
 
-.x-gray-button:hover {
-    background: #EE448B;
+.gray-button:hover {
+  background: #EE448B;
 }
 
-.x-gray-button:focus {
+.gray-button:focus {
   background: #EE448B;
   outline: 0;
 }
 
-#y-update-button {
-  /* margin-right: 2%; */
+#update-button {
+
 }
 
 h4 {
-  font-weight: 300;
   font-size: 20px;
+  font-weight: 300;
 }
 
-.x-current-range-number {
+.current-range-number {
   font-weight: 700;
   text-decoration: underline;
 }
 
-
-#y-first-challenger {
+#first-challenger {
 
 }
 
-#y-first-challenger-name {
+#first-challenger-name,
+#second-challenger-name  {
   font-size: 20px;
   padding: 5% 2%;
   width: 182%;
 }
 
-#y-first-challenger-guess {
+#first-challenger-guess,
+#second-challenger-guess {
   font-size: 20px;
   padding: 5% 2%;
   width: 95%;
 }
 
-#y-second-challenger {
+#second-challenger {
 
 }
 
-#y-second-challenger-name {
-  font-size: 20px;
-  padding: 5% 2%;
-  width: 182%;
+#second-challenger-name {
+
 }
 
-#y-second-challenger-guess {
-  font-size: 20px;
-  padding: 5% 2%;
-  width: 95%;
+#second-challenger-guess {
+
 }
 
 .challenge-container {
 
 }
 
-#y-label-input-button {
+#label-input-button {
   display: flex;
   justify-content: space-around;
   margin-top: 9%;
 }
 
-#y-submit-guess-button {
+#submit-guess-button {
 
 }
 
-#y-reset-game-button {
+#reset-game-button {
 
 }
 
-#y-clear-form-button {
-
+#clear-form-button {
 
 }
 
-.x-results-section {
+.results-section {
 
 }
 
@@ -251,11 +231,11 @@ p {
 
 }
 
-#y-challenger-1-current-guess {
+#challenger-1-current-guess {
 
 }
 
-#y-challenger-2-current-guess {
+#challenger-2-current-guess {
 
 }
 
