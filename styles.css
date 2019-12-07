@@ -50,7 +50,7 @@ main {
   background-color: #FFFFFF;
   border: 2px solid #EFEFEF;
   margin-bottom: 3%;
-  padding: 2%;
+  padding: 2% 2% 0;
 }
 
 h3 {
