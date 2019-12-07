@@ -156,8 +156,15 @@ h4 {
   margin-top: 7.5%;
 }
 
+#results-container {
+  padding: 1%;
+}
+
 #current-guess-container {
-  
+  display: flex;
+  justify-content: space-around;
+  margin: 2%;
+  text-align: center;
 }
 
 /* RIGHT SIDE STYLING */
