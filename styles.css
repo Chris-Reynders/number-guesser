@@ -85,7 +85,7 @@ h3 {
 }
 
 #minrange-inputbox,
-#maximumrange-inputbox {
+#maxrange-inputbox {
   font-size: 22px;
   margin: 1% 0;
   padding: 3% 2%;
@@ -102,7 +102,6 @@ h3 {
   font-weight: 700;
   margin: 5% 1% 2.6%;
   padding: 1.5% 5%;
-  text-align: center;
   transition: background 250ms ease-in-out, transform 150ms ease;
 }
 
@@ -157,7 +156,7 @@ h4 {
 }
 
 #results-container {
-  padding: 1%;
+  margin-bottom: 8%;
 }
 
 #current-guess-container {
@@ -165,6 +164,24 @@ h4 {
   justify-content: space-around;
   margin: 2%;
   text-align: center;
+}
+
+#challenger-1-current-guess,
+#challenger-2-current-guess {
+  border: 2px solid pink;
+  height: 150%;
+}
+
+.challenger-name {
+
+}
+
+.current-guess-heading {
+
+}
+
+.guess-hint {
+  
 }
 
 /* RIGHT SIDE STYLING */
