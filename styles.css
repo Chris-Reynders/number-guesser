@@ -20,37 +20,6 @@ img {
   width: 100%;
 }
 
-h1 {
-  color: #EE448B;
-  font-weight: 100;
-  font-size: 75px;
-  padding: 1% 0 .05%;
-}
-
-#bold-heading {
-  font-weight: 700;
-}
-
-hr {
-  border: none;
-  border-top: 2px solid #DEDEDE;
-  padding-top: 0px;
-  padding-bottom: 2%;
-  margin-left: 28%;
-  margin-top: .5%;
-  width: 44.5%;
-}
-
-hr:after {
-  background: #404042;
-  color: pink;
-  content: 'Ultimate Challenger Edition';
-  padding: 0 1%;
-  position: inherit;
-  top: .18em;
-  font-size: 25px;
-}
-
 h2 {
   color: #DEDEDE;
   font-weight: 100;
@@ -74,11 +43,7 @@ main {
   border-right: 3px solid #B4B4B4;
   display: grid;
   grid-area: left;
-  /* grid-template-columns: 1fr 3fr 2fr;
-  grid-template-areas:
-  "top middle bottom"; */
   padding: 3% 3% 0;
-
 }
 
 .interface-boxes {
@@ -118,10 +83,6 @@ h3 {
   font-size: 20px;
 }
 
-.interface-input {
-
-}
-
 #minrange-inputbox {
   font-size: 20px;
   padding: 5% 2%;
@@ -157,10 +118,6 @@ h3 {
   outline: 0;
 }
 
-#update-button {
-
-}
-
 h4 {
   font-size: 20px;
   font-weight: 300;
@@ -169,10 +126,6 @@ h4 {
 .current-range-number {
   font-weight: 700;
   text-decoration: underline;
-}
-
-#first-challenger {
-
 }
 
 #first-challenger-name,
@@ -189,54 +142,18 @@ h4 {
   width: 95%;
 }
 
-#second-challenger {
-
+#challenger-1-container {
+  margin-top: 4%;
 }
 
-#second-challenger-name {
-
-}
-
-#second-challenger-guess {
-
-}
-
-.challenge-container {
-
+#challenger-2-container {
+  margin-top: 13%;
 }
 
 #label-input-button {
   display: flex;
   justify-content: space-around;
   margin-top: 9%;
-}
-
-#submit-guess-button {
-
-}
-
-#reset-game-button {
-
-}
-
-#clear-form-button {
-
-}
-
-.results-section {
-
-}
-
-p {
-
-}
-
-#challenger-1-current-guess {
-
-}
-
-#challenger-2-current-guess {
-
 }
 
 /* RIGHT SIDE STYLING */
