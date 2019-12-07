@@ -174,9 +174,12 @@ h4 {
 
 #challenger-1-current-guess,
 #challenger-2-current-guess {
-  border: 2px solid pink;
   color: #EE448B;
   height: 103%;
+}
+
+.challenger-results {
+
 }
 
 .challenger-name {
@@ -194,6 +197,10 @@ h4 {
 .guess-hint {
   color: #838289;
   font-size: 26px;
+}
+
+.blah {
+
 }
 
 /* RIGHT SIDE STYLING */
