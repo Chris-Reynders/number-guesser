@@ -60,7 +60,7 @@ h3 {
 
 #setrange-box-parent {
   display: flex;
-  margin-bottom: 5%;
+  margin-bottom: 5.5%;
 }
 
 .setrange-box-grouper {
@@ -84,16 +84,12 @@ h3 {
   font-size: 22px;
 }
 
-#minrange-inputbox {
-  font-size: 20px;
-  padding: 5% 2%;
-  width: 88%;
-}
-
-#maximumrange-inputbox{
-  font-size: 20px;
-  padding: 5% 2%;
-  width: 88%;
+#minrange-inputbox,
+#maximumrange-inputbox {
+  font-size: 22px;
+  margin: 1% 0;
+  padding: 3% 2%;
+  width: 99%;
 }
 
 .gray-button {
@@ -104,8 +100,8 @@ h3 {
   cursor: pointer;
   font-size: 20px;
   font-weight: 700;
-  margin: 4% 1% 3%;
-  padding: 1.5% 4%;
+  margin: 5% 1% 2.6%;
+  padding: 1.5% 5%;
   text-align: center;
   transition: background 250ms ease-in-out, transform 150ms ease;
 }
@@ -133,14 +129,16 @@ h4 {
 #first-challenger-name,
 #second-challenger-name  {
   font-size: 20px;
-  padding: 5% 2%;
+  margin: 2% 0;
+  padding: 4% 2%;
   width: 182%;
 }
 
 #first-challenger-guess,
 #second-challenger-guess {
   font-size: 20px;
-  padding: 5% 2%;
+  margin: 2% 0;
+  padding: 4% 2%;
   width: 95%;
 }
 
@@ -149,13 +147,13 @@ h4 {
 }
 
 #challenger-2-container {
-  margin-top: 13%;
+  margin-top: 12%;
 }
 
 #label-input-button {
   display: flex;
   justify-content: space-around;
-  margin-top: 9%;
+  margin-top: 7.5%;
 }
 
 /* RIGHT SIDE STYLING */
