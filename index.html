@@ -16,89 +16,71 @@
       <section id="main-content-left">
         <section class="interface-boxes" id="current-range-container">
           <h3>Set Range</h3>
-            <div id="setrange-box-parent">
-              <div class="setrange-box-grouper">
-                <label class="input-title">
-                  Min Range
-                </label>
-                <input type="text" class="interface-input" id="minrange-inputbox" />
-              </div>
-              <div class="setrange-box-grouper">
-                <label class="input-title">
-                  Max Range
-                </label>
-                <input type="text" class="interface-input" id="maximumrange-inputbox" />
-              </div>
-              <button class="gray-button" id="update-button">UPDATE
-              </button>
+          <div id="setrange-box-parent">
+            <div class="setrange-box-grouper">
+              <label class="input-title">Min Range</label>
+              <input type="text" class="interface-input" id="minrange-inputbox">
             </div>
-          </section>
-          <section class="interface-boxes" id="challenger-container">
-            <h4>The Current Range is <span class="current-range-number">1</span> to <span class="current-range-number">100</span></h4>
-            <section>
-              <div id="challenger-1-container">
-                <h3>Challenger 1</h3>
-                <div class="challenger-box-parent">
-                  <div class="challenger-box-grouper">
-                    <label class="input-title" id="first-challenger">
-                      Name
-                    </label>
-                    <input type="text" class="interface-input" id="first-challenger-name" />
-                  </div>
-                  <div class="challenger-box-grouper">
-                    <label class="input-title">
-                      Guess
-                    </label>
-                    <input type="text" class="interface-input" id="first-challenger-guess" />
-                  </div>
+            <div class="setrange-box-grouper">
+              <label class="input-title">Max Range</label>
+              <input type="text" class="interface-input" id="maxrange-inputbox">
+            </div>
+            <button class="gray-button" id="update-button">UPDATE</button>
+          </div>
+        </section>
+        <section class="interface-boxes" id="challenger-container">
+          <h4>The Current Range is <span class="current-range-number">1</span> to <span class="current-range-number">100</span></h4>
+          <section>
+            <div id="challenger-1-container">
+              <h3>Challenger 1</h3>
+              <div class="challenger-box-parent">
+                <div class="challenger-box-grouper">
+                  <label class="input-title" id="first-challenger">Name</label>
+                  <input type="text" class="interface-input" id="first-challenger-name">
+                </div>
+                <div class="challenger-box-grouper">
+                  <label class="input-title">Guess</label>
+                  <input type="text" class="interface-input" id="first-challenger-guess">
                 </div>
               </div>
-              <div id="challenger-2-container">
-                <h3>Challenger 2</h3>
-                <div class="challenger-box-parent">
-                  <div class="challenger-box-grouper">
-                    <label class="input-title" id="second-challenger">
-                      Name
-                    </label>
-                    <input type="text" class="interface-input" id="second-challenger-name" />
-                  </div>
-                  <div class="challenger-box-grouper">
-                    <label class="input-title">
-                      Guess
-                    </label>
-                    <input type="text" class="interface-input" id="second-challenger-guess"  />
-                  </div>
+            </div>
+            <div id="challenger-2-container">
+              <h3>Challenger 2</h3>
+              <div class="challenger-box-parent">
+                <div class="challenger-box-grouper">
+                  <label class="input-title" id="second-challenger">Name</label>
+                  <input type="text" class="interface-input" id="second-challenger-name">
                 </div>
-              </div>
-            </section>
-            <section id="label-input-button">
-              <button class="gray-button" id="submit-guess-button">SUBMIT GUESS
-              </button>
-              <button class="gray-button" id="reset-game-button">RESET GAME
-              </button>
-              <button class="gray-button" id="clear-form-button">CLEAR FORM
-              </button>
-            </section>
-          </section>
-          <section class="interface-boxes" id="results-container">
-            <h3>Latest Guess</h3>
-            <div id="current-guess-container">
-              <div class="results-section">
-                <p>Challenger 1 Name</p>
-                <p>current guess</p>
-                <div id="challenger-1-current-guess">
+                <div class="challenger-box-grouper">
+                  <label class="input-title">Guess</label>
+                  <input type="text" class="interface-input" id="second-challenger-guess">
                 </div>
-                <p>no guesses yet!</p>
-              </div>
-              <div class="results-section">
-                <p>Challenger 2 Name</p>
-                <p>current guess</p>
-                <div id="challenger-2-current-guess">
-                </div>
-                <p>no guesses yet!</p>
               </div>
             </div>
           </section>
+          <section id="label-input-button">
+            <button class="gray-button" id="submit-guess-button">SUBMIT GUESS</button>
+            <button class="gray-button" id="reset-game-button">RESET GAME</button>
+            <button class="gray-button" id="clear-form-button">CLEAR FORM</button>
+          </section>
+        </section>
+        <section class="interface-boxes" id="results-container">
+          <h3>Latest Guess</h3>
+          <div id="current-guess-container">
+            <div class="challenger-results">
+              <p class="challenger-name">Challenger 1 Name</p>
+              <p class="current-guess-heading">current guess</p>
+              <div id="challenger-1-current-guess"></div>
+              <p class="guess-hint">no guesses yet!</p>
+            </div>
+            <div class="challenger-results">
+              <p class="challenger-name">Challenger 2 Name</p>
+              <p class="current-guess-heading">current guess</p>
+              <div id="challenger-2-current-guess"></div>
+              <p class="guess-hint">no guesses yet!</p>
+            </div>
+          </div>
+        </section>
       </section>
       <section id="main-content-right">
       </section>
