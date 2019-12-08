@@ -5,6 +5,8 @@ var challengerTwoGuess = document.querySelector("#second-challenger-guess");
 var submitBtn = document.querySelector("#submit-guess-button");
 var clearFormBtn = document.querySelector("#clear-form-button");
 
+var challengerName = document.querySelector(".challenger-name");
+
 challengerOneName.addEventListener("keyup", enableSubmitBtn);
 challengerTwoName.addEventListener("keyup", enableSubmitBtn);
 challengerOneGuess.addEventListener("keyup", enableSubmitBtn);
@@ -36,6 +38,9 @@ function clearForm() {
   form.reset();
 }
 
-function showNameAndGuess() {
+function showNameAndGuess(name1, name2, guess1, guess2) {
+  var cardHtml = `
 
+     `;
+      cardContainerParent.insertAdjacentHTML("afterbegin", cardHtml);
 }
