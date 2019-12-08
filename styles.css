@@ -107,12 +107,16 @@ h3 {
 }
 
 .gray-button:hover {
-  background: #EE448B;
+  background-color: #EE448B;
 }
 
 .gray-button:focus {
-  background: #EE448B;
-  outline: 0;
+  background-color: #EE448B;
+  /* outline: 0; */
+}
+
+.active-submit-button {
+  background-color: #6e6e6e;
 }
 
 h4 {
