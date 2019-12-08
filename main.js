@@ -6,7 +6,12 @@ var submitBtn = document.querySelector("#submit-btn");
 var clearFormBtn = document.querySelector("#clear-btn");
 var nameOneErrorMsg = document.querySelector("#name-1-error");
 var nameTwoErrorMsg = document.querySelector("#name-2-error");
-var defaultStyling = document.querySelector("#latest-guess-container");
+var defaultStyling = document.querySelector("#latest-guess-wrapper");
+var showGuessOne = document.querySelector("#challenger-1-guess");
+var showGuessTwo = document.querySelector("#challenger-2-guess");
+var showNameOne = document.querySelector("#challenger-1-name");
+var showNameTwo = document.querySelector("#challenger-2-name");
+
 
 nameOneInput.addEventListener("keyup", enableSubmitBtn);
 nameTwoInput.addEventListener("keyup", enableSubmitBtn);
@@ -51,36 +56,46 @@ function clearGuess() {
 }
 
 function showNameAndGuess() {
-  var showNameOne = document.querySelector("#name-1-display");
-  var showNameTwo = document.querySelector("#name-2-display");
-  var showGuessOne = document.querySelector("#guess-1-display");
-  var showGuessTwo = document.querySelector("#guess-2-display");
+  showPlaceHolders();
+  hideDisplay();
   showNameOne.insertAdjacentHTML("afterbegin", `<p>${nameOneInput.value}</p>`);
   showNameTwo.insertAdjacentHTML("afterbegin", `<p>${nameTwoInput.value}</p>`);
   showGuessOne.insertAdjacentHTML("afterbegin", `<p>${guessOneInput.value}</p>`);
   showGuessTwo.insertAdjacentHTML("afterbegin", `<p>${guessTwoInput.value}</p>`);
-  hide();
-  clearGuess();
-  defaultStyling.classList.remove("latest-guess-container-styling");
   clearFormBtn.classList.remove("active-btn");
   submitBtn.classList.remove("active-btn");
   submitBtn.disabled = true;
   clearFormBtn.disabled = true;
+  clearGuess();
 }
 
-function hide() {
-  var nameOne = document.querySelector("#challenger-1-name");
-  var nameTwo = document.querySelector("#challenger-2-name");
-  var guessOne = document.querySelector("#challenger-1-guess");
-  var guessTwo = document.querySelector("#challenger-2-guess");
+function hideDisplay() {
+  var nameOne = document.querySelector("#name-1-display");
+  var nameTwo = document.querySelector("#name-2-display");
+  var guessOne = document.querySelector("#guess-1-display");
+  var guessTwo = document.querySelector("#guess-2-display");
   nameOne.classList.add("hidden");
   nameTwo.classList.add("hidden");
   guessOne.classList.add("hidden");
   guessTwo.classList.add("hidden");
 }
 
+function hidePlaceHolders() {
+  showNameOne.classList.add("hidden");
+  showNameTwo.classList.add("hidden");
+  showGuessOne.classList.add("hidden");
+  showGuessTwo.classList.add("hidden");
+}
+
+function showPlaceHolders() {
+  showNameOne.classList.remove("hidden");
+  showNameTwo.classList.remove("hidden");
+  showGuessOne.classList.remove("hidden");
+  showGuessTwo.classList.remove("hidden");
+}
+
 function pageLoad() {
-  defaultStyling.classList.add("latest-guess-container-styling");
+  hidePlaceHolders();
   nameOneErrorMsg.classList.add("hidden");
   nameTwoErrorMsg.classList.add("hidden");
 }

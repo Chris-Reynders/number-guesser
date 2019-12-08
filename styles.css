@@ -42,7 +42,7 @@ main {
 }
 
 /* LEFT SIDE STYLING  */
-#left-side-container {
+#left-side-wrapper {
   background-color: #f7f7f7;
   border-right: 3px solid #B4B4B4;
   display: grid;
@@ -50,7 +50,7 @@ main {
   padding: 3% 3% 0;
 }
 
-.game-section-container {
+.game-section-wrapper {
   background-color: #FFFFFF;
   border: 2px solid #EFEFEF;
   margin-bottom: 3%;
@@ -62,7 +62,7 @@ h3 {
   font-size: 25px;
 }
 
-#set-range-container {
+#set-range-wrapper {
   display: flex;
   margin-bottom: 5.5%;
 }
@@ -106,13 +106,13 @@ h4 {
   margin-top: 12%;
 }
 
-.challenger-container {
+.challenger-wrapper {
   display: flex;
   justify-content: space-between;
   margin: -.5% 0;
 }
 
-.challenger-sub-container {
+.challenger-sub-wrapper {
   display: inline-flex;
   flex-direction: column;
   margin: 1% 0 -6% 0;
@@ -158,11 +158,11 @@ h4 {
 }
 
 /* CALLED ON PAGE LOAD */
-.latest-guess-container-styling {
+/* .latest-guess-wrapper-styling {
   height: 125%;
   margin-bottom: 8%;
   padding-top: 1%;
-}
+} */
 
 #challenger-1-name-input,
 #challenger-2-name-input {
@@ -184,26 +184,23 @@ h4 {
   width: 95%;
 }
 
-.guess-container {
+.guess-wrapper {
   height: 85%;
   margin-bottom: 8%;
   padding-top: 1%;
 }
 
-#latest-guess-sub-container {
+#latest-guess-sub-wrapper {
   display: flex;
   justify-content: space-around;
   margin: 2%;
   text-align: center;
 }
 
+#guess-1-display,
+#guess-2-display,
 #challenger-1-guess,
 #challenger-2-guess {
-  height: 103%;
-}
-
-#guess-1-display,
-#guess-2-display {
   color: #EE448B;
   font-size: 100px;
   font-weight: 700;
@@ -234,7 +231,7 @@ h4 {
 }
 
 /* RIGHT SIDE STYLING */
-#right-side-container {
+#right-side-wrapper {
   background-color: #d0d2d3;
   grid-area: right;
 }
