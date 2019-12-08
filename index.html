@@ -35,7 +35,7 @@
                 <div class="challenger-sub-container">
                   <label class="input-title" id="first-challenger">Name</label>
                   <input type="text" id="challenger-1-name-input">
-                  <p class="name-error-msg hidden">Enter a name</p>
+                  <p id="name-1-error">Enter a name</p>
                 </div>
                 <div class="challenger-sub-container">
                   <label class="input-title">Guess</label>
@@ -50,7 +50,7 @@
                 <div class="challenger-sub-container">
                   <label class="input-title" id="second-challenger">Name</label>
                   <input type="text" id="challenger-2-name-input">
-                  <p class="name-error-msg hidden">Enter a name</p>
+                  <p id="name-2-error">Enter a name</p>
                 </div>
                 <div class="challenger-sub-container">
                   <label class="input-title">Guess</label>
@@ -66,10 +66,9 @@
             <button class="gray-btn" id="clear-btn" disabled>CLEAR FORM</button>
           </section>
         </section>
-        <section class="game-section-container" id="default-guess-container">
-        <section id="empty-guess-container"></section>
+        <section class="game-section-container" id="latest-guess-container">
           <h3>Latest Guess</h3>
-          <div id="latest-guess-container">
+          <div id="latest-guess-sub-container">
             <div>
               <p id="challenger-1-name">Challenger 1 Name</p>
               <p id="name-1-display"></p>
