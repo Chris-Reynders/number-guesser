@@ -34,3 +34,7 @@ function clearForm() {
   var form = document.querySelector("form");
   form.reset();
 }
+
+function showNameAndGuess() {
+
+}
