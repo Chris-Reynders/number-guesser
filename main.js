@@ -9,6 +9,7 @@ challengerOneName.addEventListener("keyup", enableSubmitBtn);
 challengerTwoName.addEventListener("keyup", enableSubmitBtn);
 challengerOneGuess.addEventListener("keyup", enableSubmitBtn);
 challengerTwoGuess.addEventListener("keyup", enableSubmitBtn);
+clearFormBtn.addEventListener("click", clearForm);
 
 function enableSubmitBtn() {
   enableClearFormBtn();
@@ -27,4 +28,9 @@ function enableClearFormBtn() {
   } else {
     clearFormBtn.disabled = true;
   }
+}
+
+function clearForm() {
+  var form = document.querySelector("form");
+  form.reset();
 }
