@@ -4,10 +4,9 @@ var guessOneInput = document.querySelector("#challenger-1-guess-input");
 var guessTwoInput = document.querySelector("#challenger-2-guess-input");
 var submitBtn = document.querySelector("#submit-btn");
 var clearFormBtn = document.querySelector("#clear-btn");
-
-var nameErrorMsg = document.querySelector(".name-error-msg");
-
-
+var nameOneErrorMsg = document.querySelector("#name-1-error");
+var nameTwoErrorMsg = document.querySelector("#name-2-error");
+var defaultStyling = document.querySelector("#latest-guess-container");
 
 nameOneInput.addEventListener("keyup", enableSubmitBtn);
 nameTwoInput.addEventListener("keyup", enableSubmitBtn);
@@ -25,6 +24,11 @@ function enableSubmitBtn() {
   } else {
     submitBtn.classList.remove("active-btn");
   }
+}
+
+function errorMsgEnterName() {
+  nameOneErrorMsg.classList.remove("hidden");
+  nameTwoErrorMsg.classList.remove("hidden");
 }
 
 function enableClearFormBtn() {
@@ -57,6 +61,7 @@ function showNameAndGuess() {
   showGuessTwo.insertAdjacentHTML("afterbegin", `<p>${guessTwoInput.value}</p>`);
   hide();
   clearGuess();
+  defaultStyling.classList.remove("latest-guess-container-styling");
   clearFormBtn.classList.remove("active-btn");
   submitBtn.classList.remove("active-btn");
   submitBtn.disabled = true;
@@ -75,6 +80,7 @@ function hide() {
 }
 
 function pageLoad() {
-  var emptyGuessContainer = document.querySelector("#empty-guess-container");
-  emptyGuessContainer.classList.add("hidden");
+  defaultStyling.classList.add("latest-guess-container-styling");
+  nameOneErrorMsg.classList.add("hidden");
+  nameTwoErrorMsg.classList.add("hidden");
 }
