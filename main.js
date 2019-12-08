@@ -29,3 +29,8 @@ function enableClearFormBtn() {
     clearFormBtn.disabled = true;
   }
 }
+
+function clearForm() {
+  var form = document.querySelector("form");
+  form.reset();
+}
