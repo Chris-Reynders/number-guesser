@@ -163,12 +163,19 @@ h4 {
   margin-top: 7.5%;
 }
 
+/* LATESET GUESS SECTION STYLING ON PAGE LOAD  */
 #results-container {
-  /* height: 125%; */
-  height: 85%;
+  height: 125%;
   margin-bottom: 8%;
   padding-top: 1%;
 }
+
+/* SHOULD BE HIDDEN ON PAGE LOAD */
+/* #guess-container {
+  height: 85%;
+  margin-bottom: 8%;
+  padding-top: 1%;
+} */
 
 #current-guess-container {
   display: flex;
@@ -178,21 +185,21 @@ h4 {
 }
 
 /* LATESET GUESS SECTION STYLING ON PAGE LOAD  */
-/* #challenger-1-current-guess,
+#challenger-1-current-guess,
 #challenger-2-current-guess {
   color: #EE448B;
   height: 103%;
-} */
+}
 
 /* SHOULD BE HIDDEN ON PAGE LOAD */
-.challenger-guess {
+/* .challenger-guess {
   color: #EE448B;
   font-size: 100px;
   font-weight: 700;
   height: 64%;
   margin-top: -9%;
   margin-bottom: -5%;
-}
+} */
 
 .challenger-name {
   font-size: 22px;
