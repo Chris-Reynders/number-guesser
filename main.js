@@ -17,7 +17,7 @@ function enableSubmitBtn() {
   enableClearFormBtn();
   if (nameOneInput.value !== "" && nameTwoInput.value !== "" && guessOneInput.value !== "" && guessTwoInput.value !== "") {
     submitBtn.disabled = false;
-    submitBtn.classList.add("active-submit-btn");
+    submitBtn.classList.add("active-btn");
   } else {
     submitBtn.disabled = true;
   }
@@ -26,7 +26,7 @@ function enableSubmitBtn() {
 function enableClearFormBtn() {
   if (nameOneInput.value !== "" || nameTwoInput.value !== "" || guessOneInput.value !== "" || guessTwoInput.value !== "") {
     clearFormBtn.disabled = false;
-    clearFormBtn.classList.add("active-submit-btn");
+    clearFormBtn.classList.add("active-btn");
   } else {
     clearFormBtn.disabled = true;
   }
