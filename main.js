@@ -3,6 +3,7 @@ var challengerOneGuess = document.querySelector("#first-challenger-guess");
 var challengerTwoName = document.querySelector("#second-challenger-name");
 var challengerTwoGuess = document.querySelector("#second-challenger-guess");
 var submitBtn = document.querySelector("#submit-guess-button");
+var clearFormBtn = document.querySelector("#clear-form-button");
 
 challengerOneName.addEventListener("keyup", enableSubmitBtn);
 challengerTwoName.addEventListener("keyup", enableSubmitBtn);
