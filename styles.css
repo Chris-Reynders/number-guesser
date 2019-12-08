@@ -177,15 +177,16 @@ h4 {
   text-align: center;
 }
 
+/* LATESET GUESS SECTION STYLING ON PAGE LOAD  */
 /* #challenger-1-current-guess,
 #challenger-2-current-guess {
   color: #EE448B;
   height: 103%;
 } */
 
+/* SHOULD BE HIDDEN ON PAGE LOAD */
 .challenger-guess {
   color: #EE448B;
-  /* display: none; */
   font-size: 100px;
   font-weight: 700;
   height: 64%;
@@ -208,10 +209,6 @@ h4 {
 .guess-hint {
   color: #838289;
   font-size: 26px;
-}
-
-.blah {
-
 }
 
 /* RIGHT SIDE STYLING */
