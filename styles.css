@@ -8,6 +8,10 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+.hidden {
+  display: none;
+}
+
 /* HEADER STYLING */
 .header-pic {
   background: no-repeat;
@@ -28,7 +32,7 @@ h2 {
   margin-top: -2%;
 }
 
-/* MAIN STYLING */
+/* POSITIONS LEFT & RIGHT SIDE OF PAGE */
 main {
  color: #404042;
  display: grid;
@@ -114,16 +118,13 @@ h4 {
   margin: 1% 0 -6% 0;
 }
 
-.name-error-msg {
+/* HIDDEN ON PAGE LOAD */
+#name-1-error,
+#name-2-error {
   color: #EE448B;
 }
 
-/* .input-title {
-  color: #838289;
-  font-size: 22px;
-} */
-
-/* BUTTONS START */
+/* ALL BUTTONS */
 .gray-btn {
   background-color: #d0d2d3;
   border: none;
@@ -155,9 +156,9 @@ h4 {
   justify-content: space-around;
   margin-top: 7.5%;
 }
-/* BUTTONS STOP */
 
-#default-guess-container {
+/* CALLED ON PAGE LOAD */
+.latest-guess-container-styling {
   height: 125%;
   margin-bottom: 8%;
   padding-top: 1%;
@@ -183,20 +184,13 @@ h4 {
   width: 95%;
 }
 
-/* HIDDEN ON PAGE LOAD */
-#empty-guess-container {
-  height: 85%;
-  margin-bottom: 8%;
-  padding-top: 1%;
-}
-
 .guess-container {
   height: 85%;
   margin-bottom: 8%;
   padding-top: 1%;
 }
 
-#latest-guess-container {
+#latest-guess-sub-container {
   display: flex;
   justify-content: space-around;
   margin: 2%;
@@ -243,8 +237,4 @@ h4 {
 #right-side-container {
   background-color: #d0d2d3;
   grid-area: right;
-}
-
-.hidden {
-  display: none;
 }
