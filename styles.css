@@ -204,7 +204,10 @@ h4 {
   margin-bottom: -5%;
 } */
 
-.challenger-name {
+#challenger-1-name,
+#challenger-2-name,
+#style-name-1,
+#style-name-2 {
   font-size: 22px;
   font-weight: 700;
   margin-top: -2%;
@@ -227,6 +230,6 @@ h4 {
   grid-area: right;
 }
 
-/* .hidden {
+.hidden {
   display: none;
-} */
+}
