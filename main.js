@@ -21,6 +21,7 @@ function enableSubmitBtn() {
     submitBtn.classList.add("active-btn");
   } else {
     submitBtn.disabled = true;
+    submitBtn.classList.remove("active-btn");
   }
 }
 
@@ -30,6 +31,7 @@ function enableClearFormBtn() {
     clearFormBtn.classList.add("active-btn");
   } else {
     clearFormBtn.disabled = true;
+    clearFormBtn.classList.remove("active-btn");
   }
 }
 
