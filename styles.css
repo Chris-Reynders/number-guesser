@@ -179,6 +179,8 @@ h4 {
 #challenger-1-current-guess,
 #challenger-2-current-guess {
   color: #EE448B;
+  font-size: 104px;
+  font-weight: 700;
   height: 103%;
 }
 
