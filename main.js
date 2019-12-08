@@ -33,8 +33,15 @@ function enableClearFormBtn() {
 }
 
 function clearForm() {
-  var guessForm = document.querySelector("form");
-  guessForm.reset();
+  var clearForm = document.querySelector("form");
+  clearForm.reset();
+}
+
+function clearGuess() {
+  var guess1 = document.querySelector("#clear-guess-1");
+  var guess2 = document.querySelector("#clear-guess-2");
+  guess1.reset();
+  guess2.reset();
 }
 
 function showNameAndGuess() {
@@ -47,7 +54,7 @@ function showNameAndGuess() {
   showGuessOne.insertAdjacentHTML("afterbegin", `<p>${guessOneInput.value}</p>`);
   showGuessTwo.insertAdjacentHTML("afterbegin", `<p>${guessTwoInput.value}</p>`);
   hide();
-  clearForm();
+  clearGuess();
 }
 
 function hide() {
@@ -55,12 +62,10 @@ function hide() {
   var nameTwo = document.querySelector("#challenger-2-name");
   var guessOne = document.querySelector("#challenger-1-guess");
   var guessTwo = document.querySelector("#challenger-2-guess");
-  var guessContainer = document.querySelector(".guess-container");
   nameOne.classList.add("hidden");
   nameTwo.classList.add("hidden");
   guessOne.classList.add("hidden");
   guessTwo.classList.add("hidden");
-  guessContainer.classList.add("guess-container");
 }
 
 function pageLoad() {
