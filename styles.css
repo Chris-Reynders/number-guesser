@@ -114,6 +114,10 @@ h4 {
   margin: 1% 0 -6% 0;
 }
 
+.error-msg {
+  color: #EE448B;
+}
+
 /* .input-title {
   color: #838289;
   font-size: 22px;
