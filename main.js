@@ -54,7 +54,10 @@ function showNameAndGuess() {
   showGuessTwo.insertAdjacentHTML("afterbegin", `<p>${guessTwoInput.value}</p>`);
   hide();
   clearGuess();
-  clearFormBtn.classList.add("active-btn");
+  clearFormBtn.classList.remove("active-btn");
+  submitBtn.classList.remove("active-btn");
+  submitBtn.disabled = true;
+  clearFormBtn.disabled = true;
 }
 
 function hide() {
