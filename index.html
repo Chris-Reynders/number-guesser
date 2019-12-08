@@ -23,12 +23,12 @@
               <label class="input-title">Max Range</label>
               <input type="text" id="max-range-input">
             </div>
-            <button class="gray-btn" id="update-btn">UPDATE</button>
+            <button class="gray-btn" id="update-btn" disabled>UPDATE</button>
           </div>
         </section>
         <section class="game-section-container">
           <h4>The Current Range is <span class="current-range">1</span> to <span class="current-range">100</span></h4>
-          <section>
+          <form id="guess-form">
             <div id="challenger-1">
               <h3>Challenger 1</h3>
               <div class="challenger-container">
@@ -38,11 +38,7 @@
                 </div>
                 <div class="challenger-sub-container">
                   <label class="input-title">Guess</label>
-
-                  <form id="clear-guess-1">
-                  <input type="number" id="challenger-1-guess-input" class="clear">
-                  </form>
-
+                  <input type="number" id="challenger-1-guess-input">
                 </div>
               </div>
             </div>
@@ -55,19 +51,15 @@
                 </div>
                 <div class="challenger-sub-container">
                   <label class="input-title">Guess</label>
-
-                  <form id="clear-guess-2">
-                  <input type="number" id="challenger-2-guess-input" class="clear">
-                </form>
-
+                  <input type="number" id="challenger-2-guess-input">
                 </div>
               </div>
             </div>
-          </section>
+          </form>
           <section id="label-input-btn">
-            <button class="gray-btn" id="submit-btn">SUBMIT GUESS</button>
-            <button class="gray-btn" id="reset-btn">RESET GAME</button>
-            <button class="gray-btn" id="clear-btn">CLEAR FORM</button>
+            <button class="gray-btn" id="submit-btn" disabled>SUBMIT GUESS</button>
+            <button class="gray-btn" id="reset-btn" disabled>RESET GAME</button>
+            <button class="gray-btn" id="clear-btn" disabled>CLEAR FORM</button>
           </section>
         </section>
         <section class="game-section-container" id="default-guess-container">

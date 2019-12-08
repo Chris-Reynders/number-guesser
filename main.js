@@ -5,6 +5,7 @@ var guessTwoInput = document.querySelector("#challenger-2-guess-input");
 var submitBtn = document.querySelector("#submit-btn");
 var clearFormBtn = document.querySelector("#clear-btn");
 
+
 nameOneInput.addEventListener("keyup", enableSubmitBtn);
 nameTwoInput.addEventListener("keyup", enableSubmitBtn);
 guessOneInput.addEventListener("keyup", enableSubmitBtn);
@@ -19,7 +20,7 @@ function enableSubmitBtn() {
     submitBtn.disabled = false;
     submitBtn.classList.add("active-btn");
   } else {
-    submitBtn.disabled = true;
+    submitBtn.classList.remove("active-btn");
   }
 }
 
@@ -28,20 +29,18 @@ function enableClearFormBtn() {
     clearFormBtn.disabled = false;
     clearFormBtn.classList.add("active-btn");
   } else {
-    clearFormBtn.disabled = true;
+    clearFormBtn.classList.remove("active-btn");
   }
 }
 
 function clearForm() {
-  var clearForm = document.querySelector("form");
+  var clearForm = document.querySelector("#guess-form");
   clearForm.reset();
 }
 
 function clearGuess() {
-  var guess1 = document.querySelector("#clear-guess-1");
-  var guess2 = document.querySelector("#clear-guess-2");
-  guess1.reset();
-  guess2.reset();
+  guessOneInput.value = "";
+  guessTwoInput.value = "";
 }
 
 function showNameAndGuess() {
@@ -55,6 +54,10 @@ function showNameAndGuess() {
   showGuessTwo.insertAdjacentHTML("afterbegin", `<p>${guessTwoInput.value}</p>`);
   hide();
   clearGuess();
+  clearFormBtn.classList.remove("active-btn");
+  submitBtn.classList.remove("active-btn");
+  submitBtn.disabled = true;
+  clearFormBtn.disabled = true;
 }
 
 function hide() {
