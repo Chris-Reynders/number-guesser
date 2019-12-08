@@ -11,76 +11,89 @@
   <body>
     <div class="header-pic"><img src="./assets/number-guesser-title.png"></div>
     <main>
-      <section id="main-content-left">
-        <section class="interface-boxes" id="current-range-container">
+      <section id="left-side-container">
+        <section class="game-section-container">
           <h3>Set Range</h3>
-          <div id="setrange-box-parent">
-            <div class="setrange-box-grouper">
+          <div id="set-range-container">
+            <div class="label-and-input">
               <label class="input-title">Min Range</label>
-              <input type="text" class="interface-input" id="minrange-inputbox">
+              <input type="text" id="min-range-input">
             </div>
-            <div class="setrange-box-grouper">
+            <div class="label-and-input">
               <label class="input-title">Max Range</label>
-              <input type="text" class="interface-input" id="maxrange-inputbox">
+              <input type="text" id="max-range-input">
             </div>
-            <button class="gray-button" id="update-button">UPDATE</button>
+            <button class="gray-btn" id="update-btn">UPDATE</button>
           </div>
         </section>
-        <section class="interface-boxes" id="challenger-container">
-          <h4>The Current Range is <span class="current-range-number">1</span> to <span class="current-range-number">100</span></h4>
-          <form>
-            <div id="challenger-1-container">
+        <section class="game-section-container">
+          <h4>The Current Range is <span class="current-range">1</span> to <span class="current-range">100</span></h4>
+          <section>
+            <div id="challenger-1">
               <h3>Challenger 1</h3>
-              <div class="challenger-box-parent">
-                <div class="challenger-box-grouper">
+              <div class="challenger-container">
+                <div class="challenger-sub-container">
                   <label class="input-title" id="first-challenger">Name</label>
-                  <input type="text" class="interface-input" id="first-challenger-name">
+                  <input type="text" id="challenger-1-name-input">
                 </div>
-                <div class="challenger-box-grouper">
+                <div class="challenger-sub-container">
                   <label class="input-title">Guess</label>
-                  <input type="text" class="interface-input" id="first-challenger-guess">
+
+                  <form id="clear-guess-1">
+                  <input type="number" id="challenger-1-guess-input" class="clear">
+                  </form>
+
                 </div>
               </div>
             </div>
-            <div id="challenger-2-container">
+            <div id="challenger-2">
               <h3>Challenger 2</h3>
-              <div class="challenger-box-parent">
-                <div class="challenger-box-grouper">
+              <div class="challenger-container">
+                <div class="challenger-sub-container">
                   <label class="input-title" id="second-challenger">Name</label>
-                  <input type="text" class="interface-input" id="second-challenger-name">
+                  <input type="text" id="challenger-2-name-input">
                 </div>
-                <div class="challenger-box-grouper">
+                <div class="challenger-sub-container">
                   <label class="input-title">Guess</label>
-                  <input type="text" class="interface-input" id="second-challenger-guess">
+
+                  <form id="clear-guess-2">
+                  <input type="number" id="challenger-2-guess-input" class="clear">
+                </form>
+
                 </div>
               </div>
             </div>
-          </form>
-          <section id="label-input-button">
-            <button class="gray-button" id="submit-guess-button">SUBMIT GUESS</button>
-            <button class="gray-button" id="reset-game-button">RESET GAME</button>
-            <button class="gray-button" id="clear-form-button">CLEAR FORM</button>
+          </section>
+          <section id="label-input-btn">
+            <button class="gray-btn" id="submit-btn">SUBMIT GUESS</button>
+            <button class="gray-btn" id="reset-btn">RESET GAME</button>
+            <button class="gray-btn" id="clear-btn">CLEAR FORM</button>
           </section>
         </section>
-        <section class="interface-boxes" id="results-container">
+        <section class="game-section-container" id="default-guess-container">
+        <section id="empty-guess-container"></section>
           <h3>Latest Guess</h3>
-          <div id="current-guess-container">
-            <div class="challenger-results">
-              <p class="challenger-name">Challenger 1 Name</p>
-              <p class="current-guess-heading">current guess</p>
-              <div id="challenger-1-current-guess"></div>
-              <p class="guess-hint">no guesses yet!</p>
+          <div id="latest-guess-container">
+            <div>
+              <p id="challenger-1-name">Challenger 1 Name</p>
+              <p id="name-1-display"></p>
+              <p class="current-guess">current guess</p>
+              <p id="challenger-1-guess"></p>
+              <p id="guess-1-display"></p>
+              <p id="challenger-1-hint">no guesses yet!</p>
             </div>
             <div>
-              <p class="challenger-name">Challenger 2 Name</p>
-              <p class="current-guess-heading">current guess</p>
-              <div id="challenger-2-current-guess"></div>
-              <p class="guess-hint">no guesses yet!</p>
+              <p id="challenger-2-name">Challenger 2 Name</p>
+              <p id="name-2-display"></p>
+              <p class="current-guess">current guess</p>
+              <p id="challenger-2-guess"></p>
+              <p id="guess-2-display"></p>
+              <p id="challenger-2-hint">no guesses yet!</p>
             </div>
           </div>
         </section>
       </section>
-      <section id="main-content-right">
+      <section id="right-side-container">
       </section>
     </main>
   <script src="./main.js"></script>

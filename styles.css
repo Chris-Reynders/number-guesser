@@ -38,7 +38,7 @@ main {
 }
 
 /* LEFT SIDE STYLING  */
-#main-content-left {
+#left-side-container {
   background-color: #f7f7f7;
   border-right: 3px solid #B4B4B4;
   display: grid;
@@ -46,7 +46,7 @@ main {
   padding: 3% 3% 0;
 }
 
-.interface-boxes {
+.game-section-container {
   background-color: #FFFFFF;
   border: 2px solid #EFEFEF;
   margin-bottom: 3%;
@@ -58,25 +58,23 @@ h3 {
   font-size: 25px;
 }
 
-#setrange-box-parent {
+#set-range-container {
   display: flex;
   margin-bottom: 5.5%;
 }
 
-.setrange-box-grouper {
+.label-and-input {
   margin-right: 3%;
 }
 
-.challenger-box-parent {
-  display: flex;
-  justify-content: space-between;
-  margin: -.5% 0;
-}
-
-.challenger-box-grouper {
-  display: inline-flex;
-  flex-direction: column;
-  margin: 1% 0 -6% 0;
+#min-range-input,
+#max-range-input {
+  color: #404041;
+  font-size: 22px;
+  margin: 1% 0;
+  outline: 0;
+  padding: 3% 2%;
+  width: 99%;
 }
 
 .input-title {
@@ -84,16 +82,45 @@ h3 {
   font-size: 22px;
 }
 
-#minrange-inputbox,
-#maxrange-inputbox {
+h4 {
   color: #404041;
   font-size: 22px;
-  margin: 1% 0;
-  padding: 3% 2%;
-  width: 99%;
+  font-weight: 300;
+  padding-top: 0.4%;
 }
 
-.gray-button {
+.current-range {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+#challenger-1 {
+  margin-top: 3.5%;
+}
+
+#challenger-2 {
+  margin-top: 12%;
+}
+
+.challenger-container {
+  display: flex;
+  justify-content: space-between;
+  margin: -.5% 0;
+}
+
+.challenger-sub-container {
+  display: inline-flex;
+  flex-direction: column;
+  margin: 1% 0 -6% 0;
+}
+
+/* .input-title {
+  color: #838289;
+  font-size: 22px;
+} */
+
+/* BUTTONS START */
+.gray-btn {
   background-color: #d0d2d3;
   border: none;
   border-radius: 50px;
@@ -106,109 +133,114 @@ h3 {
   transition: background 250ms ease-in-out, transform 150ms ease;
 }
 
-.gray-button:hover {
+.gray-btn:hover {
   background-color: #EE448B;
 }
 
-.gray-button:focus {
-  background-color: #EE448B;
-  /* outline: 0; */
+.gray-btn:focus {
+  /* background-color: #EE448B; */
+  outline: 0;
 }
 
-.active-submit-button {
+.active-btn {
   background-color: #6e6e6e;
 }
 
-h4 {
-  color: #404041;
-  font-size: 22px;
-  font-weight: 300;
-  padding-top: 0.4%;
-}
-
-.current-range-number {
-  font-weight: 700;
-  text-decoration: underline;
-}
-
-#first-challenger-name,
-#second-challenger-name  {
-  color: #404041;
-  font-size: 20px;
-  margin: 2% 0;
-  padding: 4% 2%;
-  width: 182%;
-}
-
-#first-challenger-guess,
-#second-challenger-guess {
-  color: #404041;
-  font-size: 20px;
-  margin: 2% 0;
-  padding: 4% 2%;
-  width: 95%;
-}
-
-#challenger-1-container {
-  margin-top: 3.5%;
-}
-
-#challenger-2-container {
-  margin-top: 12%;
-}
-
-#label-input-button {
+#label-input-btn {
   display: flex;
   justify-content: space-around;
   margin-top: 7.5%;
 }
+/* BUTTONS STOP */
 
-#results-container {
+#default-guess-container {
   height: 125%;
   margin-bottom: 8%;
   padding-top: 1%;
 }
 
-#current-guess-container {
+#challenger-1-name-input,
+#challenger-2-name-input {
+  color: #404041;
+  font-size: 20px;
+  margin: 2% 0;
+  outline: 0;
+  padding: 4% 2%;
+  width: 182%;
+}
+
+#challenger-1-guess-input,
+#challenger-2-guess-input {
+  color: #404041;
+  font-size: 20px;
+  margin: 2% 0;
+  outline: 0;
+  padding: 4% 2%;
+  width: 95%;
+}
+
+/* HIDDEN ON PAGE LOAD */
+#empty-guess-container {
+  height: 85%;
+  margin-bottom: 8%;
+  padding-top: 1%;
+}
+
+.guess-container {
+  height: 85%;
+  margin-bottom: 8%;
+  padding-top: 1%;
+}
+
+#latest-guess-container {
   display: flex;
   justify-content: space-around;
   margin: 2%;
   text-align: center;
 }
 
-#challenger-1-current-guess,
-#challenger-2-current-guess {
-  color: #EE448B;
+#challenger-1-guess,
+#challenger-2-guess {
   height: 103%;
 }
 
-.challenger-results {
-
+#guess-1-display,
+#guess-2-display {
+  color: #EE448B;
+  font-size: 100px;
+  font-weight: 700;
+  height: 64%;
+  margin-top: -9%;
+  margin-bottom: -5%;
 }
 
-.challenger-name {
+#challenger-1-name,
+#challenger-2-name,
+#name-1-display,
+#name-2-display {
   font-size: 22px;
   font-weight: 700;
   margin-top: -2%;
 }
 
-.current-guess-heading {
+.current-guess {
   color: #838289;
   font-size: 22px;
   margin-top: -1%;
 }
 
-.guess-hint {
+#challenger-1-hint,
+#challenger-2-hint {
   color: #838289;
   font-size: 26px;
 }
 
-.blah {
-
-}
-
 /* RIGHT SIDE STYLING */
-#main-content-right {
+#right-side-container {
   background-color: #d0d2d3;
   grid-area: right;
+}
+
+.hidden {
+  display: none;
 }
