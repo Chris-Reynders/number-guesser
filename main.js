@@ -18,3 +18,12 @@ function enableSubmitBtn() {
     submitBtn.disabled = true;
   }
 }
+
+function enableClearFormBtn() {
+  if (challengerOneName.value !== "" || challengerTwoName.value !== "" || challengerOneGuess.value !== "" || challengerTwoGuess.value !== "") {
+    clearFormBtn.disabled = false;
+    clearFormBtn.classList.add("active-submit-button");
+  } else {
+    clearFormBtn.disabled = true;
+  }
+}
