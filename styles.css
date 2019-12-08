@@ -112,7 +112,7 @@ h3 {
 
 .gray-button:focus {
   background-color: #EE448B;
-  /* outline: 0; */
+  outline: 0;
 }
 
 .active-submit-button {
