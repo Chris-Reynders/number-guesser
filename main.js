@@ -4,6 +4,7 @@ var guessOneInput = document.querySelector("#challenger-1-guess-input");
 var guessTwoInput = document.querySelector("#challenger-2-guess-input");
 var submitBtn = document.querySelector("#submit-btn");
 var clearFormBtn = document.querySelector("#clear-btn");
+var errorMsg = document.querySelectorAll(".error-msg")
 
 
 nameOneInput.addEventListener("keyup", enableSubmitBtn);
