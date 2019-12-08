@@ -10,6 +10,7 @@ challengerTwoName.addEventListener("keyup", enableSubmitBtn);
 challengerOneGuess.addEventListener("keyup", enableSubmitBtn);
 challengerTwoGuess.addEventListener("keyup", enableSubmitBtn);
 
+
 function enableSubmitBtn() {
   enableClearFormBtn();
   if (challengerOneName.value !== "" && challengerTwoName.value !== "" && challengerOneGuess.value !== "" && challengerTwoGuess.value !== "") {
