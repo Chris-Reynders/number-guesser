@@ -96,6 +96,6 @@ function showPlaceHolders() {
 
 function pageLoad() {
   hidePlaceHolders();
-  nameOneErrorMsg.classList.add("hidden");
-  nameTwoErrorMsg.classList.add("hidden");
+  // nameOneErrorMsg.classList.add("hidden");
+  // nameTwoErrorMsg.classList.add("hidden");
 }
