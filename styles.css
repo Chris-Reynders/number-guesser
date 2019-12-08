@@ -89,6 +89,7 @@ h3 {
   color: #404041;
   font-size: 22px;
   margin: 1% 0;
+  outline: 0;
   padding: 3% 2%;
   width: 99%;
 }
@@ -136,6 +137,7 @@ h4 {
   color: #404041;
   font-size: 20px;
   margin: 2% 0;
+  outline: 0;
   padding: 4% 2%;
   width: 182%;
 }
@@ -145,6 +147,7 @@ h4 {
   color: #404041;
   font-size: 20px;
   margin: 2% 0;
+  outline: 0;
   padding: 4% 2%;
   width: 95%;
 }
