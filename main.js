@@ -1,63 +1,69 @@
-var challengerOneName = document.querySelector("#first-challenger-name");
-var challengerOneGuess = document.querySelector("#first-challenger-guess");
-var challengerTwoName = document.querySelector("#second-challenger-name");
-var challengerTwoGuess = document.querySelector("#second-challenger-guess");
-var submitBtn = document.querySelector("#submit-guess-button");
-var clearFormBtn = document.querySelector("#clear-form-button");
-var nameOne = document.querySelector("#challenger-1-name");
-var nameTwo = document.querySelector("#challenger-2-name");
+var nameOneInput = document.querySelector("#challenger-1-name-input");
+var nameTwoInput = document.querySelector("#challenger-2-name-input");
+var guessOneInput = document.querySelector("#challenger-1-guess-input");
+var guessTwoInput = document.querySelector("#challenger-2-guess-input");
+var submitBtn = document.querySelector("#submit-btn");
+var clearFormBtn = document.querySelector("#clear-btn");
 
-
-
-challengerOneName.addEventListener("keyup", enableSubmitBtn);
-challengerTwoName.addEventListener("keyup", enableSubmitBtn);
-challengerOneGuess.addEventListener("keyup", enableSubmitBtn);
-challengerTwoGuess.addEventListener("keyup", enableSubmitBtn);
+nameOneInput.addEventListener("keyup", enableSubmitBtn);
+nameTwoInput.addEventListener("keyup", enableSubmitBtn);
+guessOneInput.addEventListener("keyup", enableSubmitBtn);
+guessTwoInput.addEventListener("keyup", enableSubmitBtn);
 clearFormBtn.addEventListener("click", clearForm);
 submitBtn.addEventListener("click", showNameAndGuess);
 window.addEventListener("load", pageLoad);
 
 function enableSubmitBtn() {
   enableClearFormBtn();
-  if (challengerOneName.value !== "" && challengerTwoName.value !== "" && challengerOneGuess.value !== "" && challengerTwoGuess.value !== "") {
+  if (nameOneInput.value !== "" && nameTwoInput.value !== "" && guessOneInput.value !== "" && guessTwoInput.value !== "") {
     submitBtn.disabled = false;
-    submitBtn.classList.add("active-submit-button");
+    submitBtn.classList.add("active-submit-btn");
   } else {
     submitBtn.disabled = true;
   }
 }
 
 function enableClearFormBtn() {
-  if (challengerOneName.value !== "" || challengerTwoName.value !== "" || challengerOneGuess.value !== "" || challengerTwoGuess.value !== "") {
+  if (nameOneInput.value !== "" || nameTwoInput.value !== "" || guessOneInput.value !== "" || guessTwoInput.value !== "") {
     clearFormBtn.disabled = false;
-    clearFormBtn.classList.add("active-submit-button");
+    clearFormBtn.classList.add("active-submit-btn");
   } else {
     clearFormBtn.disabled = true;
   }
 }
 
 function clearForm() {
-  var form = document.querySelector("form");
-  form.reset();
+  var guessForm = document.querySelector("form");
+  guessForm.reset();
 }
 
 function showNameAndGuess() {
-  var challengerOne = document.querySelector("#style-name-1");
-  var challengerTwo = document.querySelector("#style-name-2");
+  var showNameOne = document.querySelector("#name-1-display");
+  var showNameTwo = document.querySelector("#name-2-display");
+  var showGuessOne = document.querySelector("#guess-1-display");
+  var showGuessTwo = document.querySelector("#guess-2-display");
+  showNameOne.insertAdjacentHTML("afterbegin", `<p>${nameOneInput.value}</p>`);
+  showNameTwo.insertAdjacentHTML("afterbegin", `<p>${nameTwoInput.value}</p>`);
+  showGuessOne.insertAdjacentHTML("afterbegin", `<p>${guessOneInput.value}</p>`);
+  showGuessTwo.insertAdjacentHTML("afterbegin", `<p>${guessTwoInput.value}</p>`);
   hide();
-  challengerOne.insertAdjacentHTML("afterbegin", `<p>${challengerOneName.value}</p>`);
-  challengerTwo.insertAdjacentHTML("afterbegin", `<p>${challengerTwoName.value}</p>`);
   clearForm();
 }
 
 function hide() {
+  var nameOne = document.querySelector("#challenger-1-name");
+  var nameTwo = document.querySelector("#challenger-2-name");
+  var guessOne = document.querySelector("#challenger-1-guess");
+  var guessTwo = document.querySelector("#challenger-2-guess");
+  var guessContainer = document.querySelector(".guess-container");
   nameOne.classList.add("hidden");
   nameTwo.classList.add("hidden");
+  guessOne.classList.add("hidden");
+  guessTwo.classList.add("hidden");
+  guessContainer.classList.add("guess-container");
 }
 
 function pageLoad() {
-  var guessContainer = document.querySelector("#guess-container");
-  var challengersGuess = document.querySelectorAll(".challenger-guess");
-  guessContainer.classList.add("hidden");
-  challengersGuess.classList.add("hidden");
+  var emptyGuessContainer = document.querySelector("#empty-guess-container");
+  emptyGuessContainer.classList.add("hidden");
 }
