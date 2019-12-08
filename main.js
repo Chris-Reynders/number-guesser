@@ -7,11 +7,6 @@ var clearFormBtn = document.querySelector("#clear-form-button");
 var nameOne = document.querySelector("#challenger-1-name");
 var nameTwo = document.querySelector("#challenger-2-name");
 
-var challengerOne = document.querySelector("#style-name-1");
-var challengerTwo = document.querySelector("#style-name-2");
-
-
-
 challengerOneName.addEventListener("keyup", enableSubmitBtn);
 challengerTwoName.addEventListener("keyup", enableSubmitBtn);
 challengerOneGuess.addEventListener("keyup", enableSubmitBtn);
@@ -45,9 +40,12 @@ function clearForm() {
 }
 
 function showNameAndGuess() {
+  var challengerOne = document.querySelector("#style-name-1");
+  var challengerTwo = document.querySelector("#style-name-2");
   hide();
   challengerOne.insertAdjacentHTML("afterbegin", `<p>${challengerOneName.value}</p>`);
   challengerTwo.insertAdjacentHTML("afterbegin", `<p>${challengerTwoName.value}</p>`);
+  clearForm();
 }
 
 function hide() {
