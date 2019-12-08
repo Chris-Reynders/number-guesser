@@ -4,8 +4,13 @@ var challengerTwoName = document.querySelector("#second-challenger-name");
 var challengerTwoGuess = document.querySelector("#second-challenger-guess");
 var submitBtn = document.querySelector("#submit-guess-button");
 var clearFormBtn = document.querySelector("#clear-form-button");
+var nameOne = document.querySelector("#challenger-1-name");
+var nameTwo = document.querySelector("#challenger-2-name");
 
-var challengerName = document.querySelector(".challenger-name");
+var challengerOne = document.querySelector("#style-name-1");
+var challengerTwo = document.querySelector("#style-name-2");
+
+
 
 challengerOneName.addEventListener("keyup", enableSubmitBtn);
 challengerTwoName.addEventListener("keyup", enableSubmitBtn);
@@ -13,6 +18,7 @@ challengerOneGuess.addEventListener("keyup", enableSubmitBtn);
 challengerTwoGuess.addEventListener("keyup", enableSubmitBtn);
 clearFormBtn.addEventListener("click", clearForm);
 submitBtn.addEventListener("click", showNameAndGuess);
+// window.addEventListener("load", pageLoad);
 
 function enableSubmitBtn() {
   enableClearFormBtn();
@@ -38,9 +44,18 @@ function clearForm() {
   form.reset();
 }
 
-function showNameAndGuess(name1, name2, guess1, guess2) {
-  var cardHtml = `
-
-     `;
-      cardContainerParent.insertAdjacentHTML("afterbegin", cardHtml);
+function showNameAndGuess() {
+  hide();
+  challengerOne.insertAdjacentHTML("afterbegin", `<p>${challengerOneName.value}</p>`);
+  challengerTwo.insertAdjacentHTML("afterbegin", `<p>${challengerTwoName.value}</p>`);
 }
+
+function hide() {
+  nameOne.classList.add("hidden");
+  nameTwo.classList.add("hidden");
+}
+
+// function pageLoad() {
+//   challengerOne.classList.add("hidden");
+//   challengerTwo.classList.add("hidden");
+// }
