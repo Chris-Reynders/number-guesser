@@ -9,7 +9,7 @@ challengerOneName.addEventListener("keyup", enableSubmitBtn);
 challengerTwoName.addEventListener("keyup", enableSubmitBtn);
 challengerOneGuess.addEventListener("keyup", enableSubmitBtn);
 challengerTwoGuess.addEventListener("keyup", enableSubmitBtn);
-
+clearFormBtn.addEventListener("click", clearForm);
 
 function enableSubmitBtn() {
   enableClearFormBtn();
