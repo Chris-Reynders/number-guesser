@@ -28,7 +28,7 @@
         </section>
         <section class="game-section-container">
           <h4>The Current Range is <span class="current-range">1</span> to <span class="current-range">100</span></h4>
-          <section>
+          <form id="guess-form">
             <div id="challenger-1">
               <h3>Challenger 1</h3>
               <div class="challenger-container">
@@ -39,9 +39,7 @@
                 <div class="challenger-sub-container">
                   <label class="input-title">Guess</label>
 
-                  <form id="clear-guess-1">
-                  <input type="number" id="challenger-1-guess-input" class="clear">
-                  </form>
+                  <input type="number" id="challenger-1-guess-input">
 
                 </div>
               </div>
@@ -56,14 +54,14 @@
                 <div class="challenger-sub-container">
                   <label class="input-title">Guess</label>
 
-                  <form id="clear-guess-2">
-                  <input type="number" id="challenger-2-guess-input" class="clear">
-                </form>
+
+                  <input type="number" id="challenger-2-guess-input">
+
 
                 </div>
               </div>
             </div>
-          </section>
+          </form>
           <section id="label-input-btn">
             <button class="gray-btn" id="submit-btn">SUBMIT GUESS</button>
             <button class="gray-btn" id="reset-btn">RESET GAME</button>
