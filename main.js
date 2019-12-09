@@ -33,7 +33,7 @@ function enableSubmitBtn() {
   } else {
     submitBtn.classList.remove("active-btn");
   }
-}
+};
 
 function checkNameOneInput() {
   if (nameOneInput.value !== "") {
@@ -41,7 +41,7 @@ function checkNameOneInput() {
   } else {
     nameOneErrorMsg.classList.remove("hidden");
   }
-}
+};
 
 function checkNameTwoInput() {
   if (nameTwoInput.value !== "") {
@@ -49,7 +49,7 @@ function checkNameTwoInput() {
   } else {
     nameTwoErrorMsg.classList.remove("hidden");
   }
-}
+};
 
 function enableClearFormBtn() {
   if (nameOneInput.value !== "" || nameTwoInput.value !== "" || guessOneInput.value !== "" || guessTwoInput.value !== "") {
@@ -59,27 +59,27 @@ function enableClearFormBtn() {
     clearFormBtn.classList.remove("active-btn");
     submitBtn.classList.remove("active-btn");
   }
-}
+};
 
 function clearForm() {
   var clearForm = document.querySelector("#guess-form");
   clearForm.reset();
   enableSubmitBtn();
   submitBtn.disabled = true;
-}
+};
 
 function checkChallengerOneGuess() {
 
-}
+};
 
 function checkChallengerTwoGuess() {
 
-}
+};
 
 function clearGuess() {
   guessOneInput.value = "";
   guessTwoInput.value = "";
-}
+};
 
 function clickSubmitBtn() {
   showPlaceHolders();
@@ -88,7 +88,7 @@ function clickSubmitBtn() {
   checkChallengerTwoGuess();
   showNameAndGuess();
   clearGuess();
-}
+};
 
 function showNameAndGuess() {
   showNameOne.insertAdjacentHTML("afterbegin", `<p>${nameOneInput.value}</p>`);
@@ -99,7 +99,7 @@ function showNameAndGuess() {
   submitBtn.classList.remove("active-btn");
   submitBtn.disabled = true;
   clearFormBtn.disabled = true;
-}
+};
 
 function hideDisplay() {
   var nameOne = document.querySelector("#name-1-display");
@@ -110,24 +110,22 @@ function hideDisplay() {
   nameTwo.classList.add("hidden");
   guessOne.classList.add("hidden");
   guessTwo.classList.add("hidden");
-}
+};
 
 function hidePlaceHolders() {
   showNameOne.classList.add("hidden");
   showNameTwo.classList.add("hidden");
   showGuessOne.classList.add("hidden");
   showGuessTwo.classList.add("hidden");
-}
+};
 
 function showPlaceHolders() {
   showNameOne.classList.remove("hidden");
   showNameTwo.classList.remove("hidden");
   showGuessOne.classList.remove("hidden");
   showGuessTwo.classList.remove("hidden");
-}
+};
 
 function pageLoad() {
   hidePlaceHolders();
-  // nameOneErrorMsg.classList.add("hidden");
-  // nameTwoErrorMsg.classList.add("hidden");
-}
+};
