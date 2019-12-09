@@ -22,6 +22,8 @@ submitBtn.addEventListener("click", showNameAndGuess);
 window.addEventListener("load", pageLoad);
 
 function enableSubmitBtn() {
+  checkNameOneInput();
+  checkNameTwoInput();
   enableClearFormBtn();
   if (nameOneInput.value !== "" && nameTwoInput.value !== "" && guessOneInput.value !== "" && guessTwoInput.value !== "") {
     submitBtn.disabled = false;
@@ -31,9 +33,20 @@ function enableSubmitBtn() {
   }
 }
 
-function errorMsgEnterName() {
-  nameOneErrorMsg.classList.remove("hidden");
-  nameTwoErrorMsg.classList.remove("hidden");
+function checkNameOneInput() {
+  if (nameOneInput.value !== "") {
+    nameOneErrorMsg.classList.add("hidden");
+  } else {
+    nameOneErrorMsg.classList.remove("hidden");
+  }
+}
+
+function checkNameTwoInput() {
+  if (nameTwoInput.value !== "") {
+    nameTwoErrorMsg.classList.add("hidden");
+  } else {
+    nameTwoErrorMsg.classList.remove("hidden");
+  }
 }
 
 function enableClearFormBtn() {
@@ -42,12 +55,15 @@ function enableClearFormBtn() {
     clearFormBtn.classList.add("active-btn");
   } else {
     clearFormBtn.classList.remove("active-btn");
+    submitBtn.classList.remove("active-btn");
   }
 }
 
 function clearForm() {
   var clearForm = document.querySelector("#guess-form");
   clearForm.reset();
+  enableSubmitBtn();
+  submitBtn.disabled = true;
 }
 
 function clearGuess() {
@@ -96,6 +112,6 @@ function showPlaceHolders() {
 
 function pageLoad() {
   hidePlaceHolders();
-  nameOneErrorMsg.classList.add("hidden");
-  nameTwoErrorMsg.classList.add("hidden");
+  // nameOneErrorMsg.classList.add("hidden");
+  // nameTwoErrorMsg.classList.add("hidden");
 }
