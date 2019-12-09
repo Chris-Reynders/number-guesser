@@ -11,6 +11,8 @@ var showGuessOne = document.querySelector("#challenger-1-guess");
 var showGuessTwo = document.querySelector("#challenger-2-guess");
 var showNameOne = document.querySelector("#challenger-1-name");
 var showNameTwo = document.querySelector("#challenger-2-name");
+var challengerOneHint = document.querySelector("#challenger-1-hint");
+var challengerTwoHint = document.querySelector("#challenger-2-hint");
 
 
 nameOneInput.addEventListener("keyup", enableSubmitBtn);
@@ -64,6 +66,14 @@ function clearForm() {
   clearForm.reset();
   enableSubmitBtn();
   submitBtn.disabled = true;
+}
+
+function checkChallengerOneGuess() {
+
+}
+
+function checkChallengerTwoGuess() {
+
 }
 
 function clearGuess() {
