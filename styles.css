@@ -97,6 +97,10 @@ h4 {
   width: 7%;
 }
 
+.error-input-border {
+  border: 2px solid #EE448B;
+}
+
 .current-range {
   font-weight: 700;
   text-decoration: underline;
@@ -172,7 +176,7 @@ h4 {
 }
 
  .input-outline-1 {
-   
+
  }
 
 #challenger-1-guess-input,
@@ -229,6 +233,13 @@ h4 {
 #challenger-2-hint {
   color: #838289;
   font-size: 26px;
+}
+
+#vertical-line {
+border-left: 2px solid #d0d2d3;
+height: inherit;
+margin: -6% 0 1%;
+width: 1%;
 }
 
 /* RIGHT SIDE STYLING */
