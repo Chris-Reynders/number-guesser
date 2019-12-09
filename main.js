@@ -13,6 +13,9 @@ var showNameOne = document.querySelector("#challenger-1-name");
 var showNameTwo = document.querySelector("#challenger-2-name");
 var challengerOneHint = document.querySelector("#challenger-1-hint");
 var challengerTwoHint = document.querySelector("#challenger-2-hint");
+var winningNumber = parseInt(Math.random() * (max - min) + min);
+var min = 1;
+var max = 100;
 
 
 nameOneInput.addEventListener("keyup", enableSubmitBtn);
@@ -69,11 +72,25 @@ function clearForm() {
 };
 
 function checkChallengerOneGuess() {
-
+  var parsed = parseInt(guessOneInput.value);
+  if (parsed < winningNumber) {
+    challengerOneHint.innerText = "that's too low";
+  } else if (parsed > winningNumber) {
+    challengerOneHint.innerText = "that's too high";
+  } else if (parsed === winningNumber) {
+    challengerOneHint.innerText = "BOOM!";
+  }
 };
 
 function checkChallengerTwoGuess() {
-
+  var parsed = parseInt(guessTwoInput.value);
+  if (parsed < winningNumber) {
+    challengerTwoHint.innerText = "that's too low";
+  } else if (parsed > winningNumber) {
+    challengerTwoHint.innerText = "that's too high";
+  } else if (parsed === winningNumber) {
+    challengerTwoHint.innerText = "BOOM!";
+  }
 };
 
 function clearGuess() {
@@ -89,6 +106,7 @@ function clickSubmitBtn() {
   showNameAndGuess();
   clearGuess();
 };
+
 
 function showNameAndGuess() {
   showNameOne.insertAdjacentHTML("afterbegin", `<p>${nameOneInput.value}</p>`);
