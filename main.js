@@ -20,7 +20,7 @@ nameTwoInput.addEventListener("keyup", enableSubmitBtn);
 guessOneInput.addEventListener("keyup", enableSubmitBtn);
 guessTwoInput.addEventListener("keyup", enableSubmitBtn);
 clearFormBtn.addEventListener("click", clearForm);
-submitBtn.addEventListener("click", showNameAndGuess);
+submitBtn.addEventListener("click", clickSubmitBtn);
 window.addEventListener("load", pageLoad);
 
 function enableSubmitBtn() {
@@ -81,11 +81,16 @@ function clearGuess() {
   guessTwoInput.value = "";
 }
 
-function showNameAndGuess() {
+function clickSubmitBtn() {
   showPlaceHolders();
   hideDisplay();
   checkChallengerOneGuess();
   checkChallengerTwoGuess();
+  showNameAndGuess();
+  clearGuess();
+}
+
+function showNameAndGuess() {
   showNameOne.insertAdjacentHTML("afterbegin", `<p>${nameOneInput.value}</p>`);
   showNameTwo.insertAdjacentHTML("afterbegin", `<p>${nameTwoInput.value}</p>`);
   showGuessOne.insertAdjacentHTML("afterbegin", `<p>${guessOneInput.value}</p>`);
@@ -94,7 +99,6 @@ function showNameAndGuess() {
   submitBtn.classList.remove("active-btn");
   submitBtn.disabled = true;
   clearFormBtn.disabled = true;
-  clearGuess();
 }
 
 function hideDisplay() {
