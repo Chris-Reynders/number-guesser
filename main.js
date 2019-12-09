@@ -84,6 +84,8 @@ function clearGuess() {
 function showNameAndGuess() {
   showPlaceHolders();
   hideDisplay();
+  checkChallengerOneGuess();
+  checkChallengerTwoGuess();
   showNameOne.insertAdjacentHTML("afterbegin", `<p>${nameOneInput.value}</p>`);
   showNameTwo.insertAdjacentHTML("afterbegin", `<p>${nameTwoInput.value}</p>`);
   showGuessOne.insertAdjacentHTML("afterbegin", `<p>${guessOneInput.value}</p>`);
