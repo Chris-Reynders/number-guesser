@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  text-align: center;
+  background-color: #404041;
+  text-transform: uppercase;
+}
+
+h1 {
+  color: #EE448B;
+  font-weight: 100;
+  font-size: 75px;
+  padding: 1% 0 .05%;
+}
+
+h2 {
+  color: #DEDEDE;
+  font-weight: 100;
+  font-size: 32px;
+  padding-bottom: 3%;
+  margin-top: -2%;
+}
+
+span {
+  font-weight: 700;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #DEDEDE;
+  padding-top: 15px;
+  padding-bottom: 2%;
+  margin-left: 28%;
+  margin-top: .5%;
+  width: 44.5%;
+}
+
+/* NESTED RULES */
+hr:after {
+  background: #404042;
+  color: #DEDEDE;
+  content: 'Ultimate Challenger Edition';
+  left: 21em;
+  padding: 0 1%;
+  position: absolute;
+  top: 4.18em;
+  font-size: 25px;
+}

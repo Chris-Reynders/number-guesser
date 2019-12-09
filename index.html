@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="./styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>MC Number Guesser</title>
+    <title>Number Guesser</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="header-pic"><img src="./assets/number-guesser-title.png"></div>
+    <div class="header-image">
+      <img src="./assets/number-guesser-title.png">
+    </div>
     <main>
       <section id="left-side-wrapper">
         <section class="game-section-wrapper">
           <h3>Set Range</h3>
           <div id="set-range-wrapper">
-            <div class="label-and-input">
+            <div class="label-input">
               <label class="input-title">Min Range</label>
               <input type="text" id="min-range-input">
             </div>
-            <div class="label-and-input">
+            <div class="label-input">
               <label class="input-title">Max Range</label>
               <input type="text" id="max-range-input">
             </div>
@@ -76,22 +78,22 @@
           <h3>Latest Guess</h3>
           <div id="latest-guess-sub-wrapper">
             <div>
-              <p id="name-1-default">Challenger 1 Name</p>
+              <p id="name-1-placeholder">Challenger 1 Name</p>
               <p id="challenger-1-name"></p>
-              <p class="current-guess">current guess</p>
-              <p style="color:#FFFFFF" id="guess-1-default">.</p>
+              <p class="current-guess-placeholder">current guess</p>
+              <p style="color:#FFFFFF" id="guess-1-placeholder">.</p>
               <p id="challenger-1-guess"></p>
-              <p id="challenger-1-default-hint">no guesses yet!</p>
+              <p id="hint-1-placeholder">no guesses yet!</p>
               <p id="challenger-1-hint"></p>
             </div>
             <div id="vertical-line"></div>
             <div>
-              <p id="name-2-default">Challenger 2 Name</p>
+              <p id="name-2-placeholder">Challenger 2 Name</p>
               <p id="challenger-2-name"></p>
-              <p class="current-guess">current guess</p>
-              <p style="color:#FFFFFF" id="guess-2-default">.</p>
+              <p class="current-guess-placeholder">current guess</p>
+              <p style="color:#FFFFFF" id="guess-2-placeholder">.</p>
               <p id="challenger-2-guess"></p>
-              <p id="challenger-2-default-hint">no guesses yet!</p>
+              <p id="hint-2-placeholder">no guesses yet!</p>
               <p id="challenger-2-hint"></p>
             </div>
           </div>

@@ -122,12 +122,12 @@ function showNameAndGuess() {
 };
 
 function hideDefault() {
-  var nameOne = document.querySelector("#name-1-default");
-  var nameTwo = document.querySelector("#name-2-default");
-  var guessOne = document.querySelector("#guess-1-default");
-  var guessTwo = document.querySelector("#guess-2-default");
-  var hintOne = document.querySelector("#challenger-1-default-hint");
-  var hintTwo = document.querySelector("#challenger-2-default-hint");
+  var nameOne = document.querySelector("#name-1-placeholder");
+  var nameTwo = document.querySelector("#name-2-placeholder");
+  var guessOne = document.querySelector("#guess-1-placeholder");
+  var guessTwo = document.querySelector("#guess-2-placeholder");
+  var hintOne = document.querySelector("#hint-1-placeholder");
+  var hintTwo = document.querySelector("#hint-2-placeholder");
   nameOne.classList.add("hidden");
   nameTwo.classList.add("hidden");
   guessOne.classList.add("hidden");
