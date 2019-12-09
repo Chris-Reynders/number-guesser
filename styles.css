@@ -208,8 +208,8 @@ h4 {
   text-align: center;
 }
 
-#guess-1-display,
-#guess-2-display,
+#guess-1-default,
+#guess-2-default,
 #challenger-1-guess,
 #challenger-2-guess {
   color: #EE448B;
@@ -222,8 +222,8 @@ h4 {
 
 #challenger-1-name,
 #challenger-2-name,
-#name-1-display,
-#name-2-display {
+#name-1-default,
+#name-2-default {
   font-size: 22px;
   font-weight: 700;
   margin-top: -2%;
@@ -235,6 +235,8 @@ h4 {
   margin-top: -1%;
 }
 
+#challenger-1-default-hint,
+#challenger-2-default-hint,
 #challenger-1-hint,
 #challenger-2-hint {
   color: #838289;
