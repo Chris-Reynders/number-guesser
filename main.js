@@ -13,10 +13,8 @@ var showNameOne = document.querySelector("#challenger-1-name");
 var showNameTwo = document.querySelector("#challenger-2-name");
 var challengerOneHint = document.querySelector("#challenger-1-hint");
 var challengerTwoHint = document.querySelector("#challenger-2-hint");
-var winningNumber = parseInt(Math.random() * (max - min) + min);
 var min = 1;
 var max = 100;
-
 
 nameOneInput.addEventListener("keyup", enableSubmitBtn);
 nameTwoInput.addEventListener("keyup", enableSubmitBtn);
@@ -74,23 +72,27 @@ function clearForm() {
 function checkChallengerOneGuess() {
   var parsed = parseInt(guessOneInput.value);
   if (parsed < winningNumber) {
-    challengerOneHint.innerText = "that's too low";
+    challengerOneHint.insertAdjacentHTML("afterbegin", "<p>that's too low</p>");
   } else if (parsed > winningNumber) {
-    challengerOneHint.innerText = "that's too high";
+    challengerOneHint.insertAdjacentHTML("afterbegin", "<p>that's too high</p>");
   } else if (parsed === winningNumber) {
-    challengerOneHint.innerText = "BOOM!";
+    challengerOneHint.insertAdjacentHTML("afterbegin", "<p>BOOM!</p>");
   }
 };
 
 function checkChallengerTwoGuess() {
   var parsed = parseInt(guessTwoInput.value);
   if (parsed < winningNumber) {
-    challengerTwoHint.innerText = "that's too low";
+    challengerTwoHint.insertAdjacentHTML("afterbegin", "<p>that's too low</p>");
   } else if (parsed > winningNumber) {
-    challengerTwoHint.innerText = "that's too high";
+    challengerTwoHint.insertAdjacentHTML("afterbegin", "<p>that's too high</p>");
   } else if (parsed === winningNumber) {
-    challengerTwoHint.innerText = "BOOM!";
+    challengerTwoHint.insertAdjacentHTML("afterbegin", "<p>BOOM!</p>");
   }
+};
+
+function generateWinningNumber(min, max) {
+  winningNumber = parseInt(Math.random() * (max - min) + min);
 };
 
 function clearGuess() {
@@ -100,13 +102,13 @@ function clearGuess() {
 
 function clickSubmitBtn() {
   showPlaceHolders();
-  hideDisplay();
+  hideDefault();
+  generateWinningNumber(min, max);
   checkChallengerOneGuess();
   checkChallengerTwoGuess();
   showNameAndGuess();
   clearGuess();
 };
-
 
 function showNameAndGuess() {
   showNameOne.insertAdjacentHTML("afterbegin", `<p>${nameOneInput.value}</p>`);
@@ -119,18 +121,24 @@ function showNameAndGuess() {
   clearFormBtn.disabled = true;
 };
 
-function hideDisplay() {
-  var nameOne = document.querySelector("#name-1-display");
-  var nameTwo = document.querySelector("#name-2-display");
-  var guessOne = document.querySelector("#guess-1-display");
-  var guessTwo = document.querySelector("#guess-2-display");
+function hideDefault() {
+  var nameOne = document.querySelector("#name-1-default");
+  var nameTwo = document.querySelector("#name-2-default");
+  var guessOne = document.querySelector("#guess-1-default");
+  var guessTwo = document.querySelector("#guess-2-default");
+  var hintOne = document.querySelector("#challenger-1-default-hint");
+  var hintTwo = document.querySelector("#challenger-2-default-hint");
   nameOne.classList.add("hidden");
   nameTwo.classList.add("hidden");
   guessOne.classList.add("hidden");
   guessTwo.classList.add("hidden");
+  hintOne.classList.add("hidden");
+  hintTwo.classList.add("hidden");
 };
 
 function hidePlaceHolders() {
+  challengerOneHint.classList.add("hidden");
+  challengerTwoHint.classList.add("hidden");
   showNameOne.classList.add("hidden");
   showNameTwo.classList.add("hidden");
   showGuessOne.classList.add("hidden");
@@ -138,6 +146,8 @@ function hidePlaceHolders() {
 };
 
 function showPlaceHolders() {
+  challengerOneHint.classList.remove("hidden");
+  challengerTwoHint.classList.remove("hidden");
   showNameOne.classList.remove("hidden");
   showNameTwo.classList.remove("hidden");
   showGuessOne.classList.remove("hidden");
