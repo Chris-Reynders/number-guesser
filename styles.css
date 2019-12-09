@@ -81,6 +81,16 @@ h3 {
   width: 99%;
 }
 
+#min-range-input:focus,
+#max-range-input:focus,
+#challenger-1-name-input:focus,
+#challenger-2-name-input:focus,
+#challenger-1-guess-input:focus,
+#challenger-2-guess-input:focus {
+  border: 1px solid #EE448B;
+  outline: none;
+}
+
 .input-title {
   color: #838289;
   font-size: 22px;
@@ -174,10 +184,6 @@ h4 {
   padding: 4% 2%;
   width: 182%;
 }
-
- .input-outline-1 {
-
- }
 
 #challenger-1-guess-input,
 #challenger-2-guess-input {
